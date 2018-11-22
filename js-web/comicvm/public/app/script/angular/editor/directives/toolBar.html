@@ -1,0 +1,74 @@
+<div class="toolbar">
+    <div class="edit"
+         ng-class="{selected: editMode}"
+         ng-click="editMode = !editMode">
+        EDIT
+    </div>
+    <div id="edit-target">
+        <div ng-show="editMode"
+             ng-class="{selected: editTarget === EDIT_TARGET.SCENE}"
+             ng-click="editTarget = EDIT_TARGET.SCENE"
+             title="Edit scene positions">
+            Scene
+        </div>
+        <div ng-show="editMode"
+             ng-class="{selected: editTarget === EDIT_TARGET.BGR}"
+             ng-click="editTarget = EDIT_TARGET.BGR"
+             title="Edit background positions">
+            Bgr
+        </div>
+        <div ng-show="editMode"
+             ng-class="{selected: editTarget === EDIT_TARGET.PANEL}"
+             ng-click="editTarget = EDIT_TARGET.PANEL"
+             title="Edit panel positions">
+            Panel
+        </div>
+    </div>
+    <div id="paint-options">
+        <div class="ink"
+             ng-hide="editMode"
+             ng-class="{selected: paintStyle === PAINT_STYLE.INK}"
+             ng-click="paintStyle === PAINT_STYLE.INK ? paintStyle = null : paintStyle = PAINT_STYLE.INK">
+            Ink
+        </div>
+        <div class="yellow"
+             ng-hide="editMode"
+             ng-class="{selected: paintStyle === PAINT_STYLE.YELLOW}"
+             ng-click="paintStyle === PAINT_STYLE.YELLOW ? paintStyle = null : paintStyle = PAINT_STYLE.YELLOW">
+            Yellow
+        </div>
+        <div class="paint-bgr"
+             ng-hide="editMode || !content.selection.background"
+             ng-class="{selected: paintBgr}"
+             ng-click="paintBgr = !paintBgr">
+            Bgr
+        </div>
+        <div class="large"
+             ng-hide="editMode"
+             ng-click="doPrint = !doPrint">
+            Print
+        </div>
+    </div>
+    <div id="layout-options">
+        <div ng-class="{selected: layout === LAYOUT.DEFAULT}"
+             ng-click="layout = LAYOUT.DEFAULT"
+             title="Show default positions">
+            Default
+        </div>
+        <div ng-class="{selected: layout === LAYOUT.SCENE}"
+             ng-click="layout = LAYOUT.SCENE"
+             title="Show positions defined for scene">
+            Scene
+        </div>
+        <div ng-class="{selected: layout === LAYOUT.BGR}"
+             ng-click="layout = LAYOUT.BGR"
+             title="Show positions defined for scene and background">
+            Bgr
+        </div>
+        <div ng-class="{selected: layout === LAYOUT.PANEL}"
+             ng-click="layout = LAYOUT.PANEL"
+             title="Show positions defined for scene, background and panel">
+            Panel
+        </div>
+    </div>
+</div>

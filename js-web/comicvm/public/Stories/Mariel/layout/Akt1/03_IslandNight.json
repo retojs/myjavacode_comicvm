@@ -1,0 +1,58 @@
+{
+  "panelProperties": [
+    "plotItemCount",
+    "bgrQualifier",
+    "pan",
+    "characterQualifier",
+    "characterPosition"
+  ],
+  "pages": [
+    [
+      {"hStrips": [0.667, 0.333]},
+      [[3, "", [0, 2]]],
+      [[3]]
+    ],
+    [
+      [[2, "reverse"], [1, "reverse", [], "Silas: toLeft"], [2, "reverse", [], "Silas: objecting"]],
+      [[3, "reverse"]],
+      [[1], [2], [1]]
+    ],
+    [
+      {"hStrips": [0.333, 0.667]},
+      [
+        {"wPanels": [0.4, 0.6]},
+        [1], [3, "", [], "all:sleep"]
+      ],
+      [[3, "", [0, 2], "all:sleep", {"x": -1.5}]]
+    ]
+  ],
+  "backgrounds": {
+    "": {
+      "characterQualifier": "all:single-image",
+      "characterPosition": {
+        "y": 2,
+        "size": 1.5,
+        "Papa": {"x": 0.7},
+        "Mariel": {"x": 0.3},
+        "Silvia": {"x": 0.7}
+      }
+    },
+    "reverse": {
+      "zoom": 1.2,
+      "reverse": true,
+      "characterPosition": {
+        "size": 1.2,
+        "y": 2,
+        "HerrS": {"x": 0.7}
+      }
+    }
+  },
+  "scene": {
+    "characterPosition": {
+      "size": 1.5,
+      "y": 0.6,
+      "Mariel": {"size": 0.8},
+      "Silvia": {"size": 0.8}
+    }
+  }
+}

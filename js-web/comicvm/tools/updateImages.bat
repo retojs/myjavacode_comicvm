@@ -1,0 +1,1 @@
+node updateImages.js

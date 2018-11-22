@@ -1,0 +1,31 @@
+Title: Traum
+
+Characters: Mermaid, Mariel, Basil
+
+Place: dream.beach
+_____
+Plot:
+
+Mermaid:
+(shush)
+    Pssst!
+
+Die Meerjungfrau deutet vielsagend in eine Richtung.
+Mariel schliesst zu ihr auf und sieht Basil, der schläft...
+
+Mermaid:
+(entzückt)
+    Er schläft.
+
+Mariel ist fasziniert von Basil.
+Basil wacht plötzlich auf und öffnet ein Auge.
+Mariel zuckt zusammen.
+
+Basil:
+    Hm?
+    Mariel?
+Basil zu Mariel:
+    Was ist los?
+    Du siehst so... anders aus.
+
+Mariel entdeckt, dass sie einen Schwanz hat wie ein Seehund.

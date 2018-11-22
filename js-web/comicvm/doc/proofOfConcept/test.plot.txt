@@ -1,0 +1,47 @@
+Characters: @Silvia, @Mariel
+
+Place: north-beach
+_____
+Plot:
+
+STORYTELLER:
+	And so this rough day finally came to an end...
+
+The sun sets over the ocean.
+
+Mariel
+(sad)
+	walks to the beach. 
+	She sits down tired and lays her head inside her hands. 
+Silvia 
+	follows her.
+
+Mariel:
+(sad)
+	*Sigh!*
+
+Silvia to Mariel:
+(happy, sad:Mariel)
+	Don't be sad!
+	Everything will be alright.
+	Just wait and see.
+	You'll feel better soon.
+	
+Mariel:
+	You're right!
+	
+Silvia: 
+(happy)
+	Yeah, I know.
+
+Silvia:
+(happy)
+Mariel:
+(happy)
+	We'll be alright!
+
+Silvia und Mariel
+	sitzen da
+
+STORYTELLER:
+	Famous last words...

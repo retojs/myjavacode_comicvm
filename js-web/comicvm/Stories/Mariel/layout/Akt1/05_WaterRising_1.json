@@ -1,0 +1,37 @@
+{
+  "panelProperties": [
+    "plotItemCount",
+    "bgrQualifier",
+    "characterQualifier",
+    "characterPosition",
+    "zoom"
+  ],
+  "pages": [
+    [
+      {"hStrips": [0.667, 0.333]},
+      [[2, "aerial"]],
+      [[3, ""]]
+    ],
+    [
+      [[3, "reverse"]],
+      [[2, "reverse"], [1, "reverse"], [2, "reverse"]],
+      [[2, ""], [1, ""], [2, ""]]
+    ]
+  ],
+  "backgrounds": {
+    "": {
+      "characterPosition": {
+        "y": 2
+      }
+    },
+    "reverse": {
+      "reverse": true
+    }
+  },
+  "scene": {
+    "characterPosition": {
+      "size": 1.2,
+      "y": 0.5
+    }
+  }
+}

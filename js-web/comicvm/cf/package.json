@@ -1,0 +1,20 @@
+{
+  "name": "StoryVM",
+  "description": "",
+  "version": "0.0.1",
+  "private": true,
+  "author": "Reto Lamprecht <reto.lamprecht@swisscom.com>",
+  "license": "ISC",
+  "scripts": {
+    "start": "node run.js"
+  },
+  "dependencies": {
+    "express": "~4.12.4",
+    "body-parser": "^1.14.2",
+    "multer": "^1.1.0",
+	"debug": "~2.2.0"
+  },
+  "engines": {
+    "node": ">=4.4.2"
+  }
+}

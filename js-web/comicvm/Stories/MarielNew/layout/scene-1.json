@@ -1,0 +1,22 @@
+{
+  "panelProperties": [
+    "plotItemCount",
+    "bgrQualifier",
+    "zoom"
+  ],
+  "pages": [
+    [
+      [
+        [ 1, "", 1 ]
+      ], 
+      [
+        [ 1, "", 1.8 ]
+      ]
+    ]
+  ],
+  "backgrounds": {
+    "": {
+      "zoom": 0.4
+    }
+  }
+}

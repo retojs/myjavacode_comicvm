@@ -1,0 +1,40 @@
+<div ng-if="page === PAGE.MAIN" id="page">
+
+    <cvm-menu-bar></cvm-menu-bar>
+
+    <cvm-source-editor
+            data-content="content"
+            data-on-source-loaded="onSourceLoaded"
+            data-on-plot-edited="onPlotEdited"
+            data-on-layout-edited="onLayoutEdited">
+    </cvm-source-editor>
+
+    <div id="story">
+        <div id="viewer">
+
+            <cvm-tool-bar></cvm-tool-bar>
+
+            <cvm-canvas
+                    data-panel-and-page="panelAndPage">
+            </cvm-canvas>
+
+        </div>
+    </div>
+
+    <cvm-panel-info
+            data-hide-if="paintBgr"
+            data-panel-and-page="panelAndPage"
+            data-mouse-listener-element="#story">
+    </cvm-panel-info>
+
+    <br/>
+
+    <div id="footer">
+        <cvm-image-panel
+                data-content="content"
+                data-on-images-loaded="onImagesLoaded">
+        </cvm-image-panel>
+    </div>
+
+    <cvm-print-frame></cvm-print-frame>
+</div>

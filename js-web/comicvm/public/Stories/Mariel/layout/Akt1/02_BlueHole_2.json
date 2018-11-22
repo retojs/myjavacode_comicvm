@@ -1,0 +1,21 @@
+{
+  "panelProperties": [
+    "plotItemCount",
+    "bgrQualifier",
+    "zoom",
+    "characterQualifier",
+    "characterPosition"
+  ],
+  "pages": [
+    [
+      [[1, "blue-hole-1"]],
+      [[0, "blue-hole-2"]],
+      [[0, "blue-hole-3"], [1, "blue-hole-4"], [0, "blue-hole-5"]]
+    ],
+    [
+      [[1, "blue-hole-6"]],
+      [[0, "blue-hole-7"], [1, "blue-hole-8"]],
+      [[1, "blue-hole-9"]]
+    ]
+  ]
+}

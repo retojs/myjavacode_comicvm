@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Jasmine Spec Runner v2.3.4</title>
+
+    <link rel="shortcut icon" type="image/png" href="jasmine/lib/jasmine-2.3.4/jasmine_favicon.png">
+    <link rel="stylesheet" href="jasmine/lib/jasmine-2.3.4/jasmine.css">
+
+    <script src="jasmine/lib/jasmine-2.3.4/jasmine.js"></script>
+    <script src="jasmine/lib/jasmine-2.3.4/jasmine-html.js"></script>
+    <script src="jasmine/lib/jasmine-2.3.4/boot.js"></script>
+
+    <!-- include source files here... -->
+
+
+    <script type="text/javascript" src="bower_components/jquery/dist/jquery.min.js"></script>
+    <script type="text/javascript" src="bower_components/jquery-ui/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="bower_components/lodash/lodash.min.js"></script>
+    <script type="text/javascript" src="bower_components/angular/angular.min.js"></script>
+    <script type="text/javascript" src="bower_components/angular-route/angular-route.min.js"></script>
+    <script type="text/javascript" src="bower_components/angular-mocks/angular-mocks.js"></script>
+    <script type="text/javascript" src="bower_components/angular-bootstrap/ui-bootstrap.min.js"></script>
+    <script type="text/javascript" src="bower_components/angular-bootstrap/ui-bootstrap-tpls.min.js"></script>
+
+    <!-- angular -->
+
+    <script type="text/javascript" src="script/angular/comicvm.js"></script>
+
+    <script type="text/javascript" src="script/angular/painter/services/images.js"></script>
+    <script type="text/javascript" src="script/angular/painter/services/painter.js"></script>
+    <script type="text/javascript" src="script/angular/painter/directives/canvas.js"></script>
+    <script type="text/javascript" src="script/angular/painter/directives/imagePanel.js"></script>
+    <script type="text/javascript" src="script/angular/painter/directives/imageDropArea.js"></script>
+    <script type="text/javascript" src="script/angular/painter/directives/imageDropIntoPage.js"></script>
+    <script type="text/javascript" src="script/angular/painter/directives/printFrame.js"></script>
+    <script type="text/javascript" src="script/angular/painter/dialogs/imageDropController.js"></script>
+
+    <script type="text/javascript" src="script/angular/editor/services/source.js"></script>
+    <script type="text/javascript" src="script/angular/editor/directives/sourceEditor.js"></script>
+    <script type="text/javascript" src="script/angular/editor/directives/panelInfo.js"></script>
+    <script type="text/javascript" src="script/angular/editor/directives/toolBar.js"></script>
+
+    <script type="text/javascript" src="script/angular/main/mainController.js"></script>
+    <script type="text/javascript" src="script/angular/main/directives/menuBar.js"></script>
+    <script type="text/javascript" src="script/angular/main/services/backend.js"></script>
+    <script type="text/javascript" src="script/angular/main/services/content.js"></script>
+    <script type="text/javascript" src="script/angular/main/services/positions.js"></script>
+
+    <!-- plain comic vm -->
+
+    <script type="text/javascript" src="script/comicVM/config.js"></script>
+
+    <script type="text/javascript" src="script/commons/basics.js"></script>
+    <script type="text/javascript" src="script/commons/basics_log.js"></script>
+
+    <script type="text/javascript" src="script/resource/plotParser/states/DefaultState.js"></script>
+    <script type="text/javascript" src="script/resource/plotParser/states/CharacterState.js"></script>
+    <script type="text/javascript" src="script/resource/plotParser/states/EmptyState.js"></script>
+    <script type="text/javascript" src="script/resource/plotParser/Automaton.js"></script>
+    <script type="text/javascript" src="script/resource/plotParser/InputType.js"></script>
+    <script type="text/javascript" src="script/resource/plotParser/Plot_Parser.js"></script>
+    <script type="text/javascript" src="script/resource/plotParser/Transitions.js"></script>
+    <script type="text/javascript" src="script/resource/PlotParser.js"></script>
+    <script type="text/javascript" src="script/resource/LayoutParser.js"></script>
+    <script type="text/javascript" src="script/resource/TagStore.js"></script>
+
+    <script type="text/javascript" src="script/entities/Scene.js"></script>
+    <script type="text/javascript" src="script/entities/Bgr.js"></script>
+    <script type="text/javascript" src="script/entities/Panel.js"></script>
+    <script type="text/javascript" src="script/entities/PlotItem.js"></script>
+    <script type="text/javascript" src="script/entities/Character.js"></script>
+
+    <script type="text/javascript" src="script/painter/LayoutRepaint.js"></script>
+    <script type="text/javascript" src="script/painter/PaintStrategy.js"></script>
+    <script type="text/javascript" src="script/painter/PanelPainter.js"></script>
+    <script type="text/javascript" src="script/painter/PanelMetaInfoPainter.js"></script>
+    <script type="text/javascript" src="script/painter/PanelTextPainter.js"></script>
+
+    <script type="text/javascript" src="script/editor/basics_editor.js"></script>
+    <script type="text/javascript" src="script/editor/DragResize.js"></script>
+    <script type="text/javascript" src="script/editor/Editor.js"></script>
+    <script type="text/javascript" src="script/editor/EditorElements.js"></script>
+    <script type="text/javascript" src="script/editor/EditorPaintStrategy.js"></script>
+    <script type="text/javascript" src="script/editor/PanelInfo.js"></script>
+
+    <script type="text/javascript" src="script/comicVM.js"></script>
+
+    <!-- jasmine utils -->
+    <script src="jasmine/util/_defineMatchersWithMessage.js"></script>
+
+    <!-- include spec files here... -->
+    <script src="jasmine/spec/angular/painterSpec.js"></script>
+    <script src="jasmine/spec/angular/imagesSpec.js"></script>
+    <script src="jasmine/spec/LayoutParserSpec.js"></script>
+    <script src="jasmine/spec/LayoutRepaintSpec.js"></script>
+    <script src="jasmine/spec/PanelSpec.js"></script>
+    <script src="jasmine/spec/PlotItemSpec.js"></script>
+    <script src="jasmine/spec/PlotParserSpec.js"></script>
+</head>
+
+<body>
+</body>
+</html>

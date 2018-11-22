@@ -1,0 +1,489 @@
+# Ideas
+
+	-p1- Make it an Electron app
+			-> work on local files
+			-> support GitHub integration anyway
+			-> can still use a webserver/client architecture
+			-> run it on a mac e.g.
+
+	-p1- Allow YAML layouts
+
+	-p1- default layout.
+
+	introduce 2 modes of layout editing
+		1. default layout.
+			can be changed via the script
+			layout json editor is DISABLED
+		2. custom layout.
+			can be started from a default layout
+			can be changed via the layout json editor (ENABLED)
+
+	-p2- parallax viewer
+
+		images have different z-index
+		characters too
+
+	-p1- solve persistency
+
+		1. local storage bei Browser-Absturz
+		2. per Web Socket ins Backend
+		3. Anbindung an GitHub
+
+
+    -p2- e2e Tests mit Screenshots
+
+        Die Tests führen ihre Use-Cases aus und generiert aber nur Screenshots der Website
+        Beim commiten wird geprüft, ob die Bilder OK sind.
+
+
+    -p2- Anbindung an Github:
+
+        - Sign-In with GitHub
+
+        - das repo enthält die Bilder und layout bzw. plot files
+
+            -> beim öffnen der URL #/name wird auf Github nach dem repo name gesucht...
+            !- vorher wird man sich einloggen müssen bei Github...
+            - mit Github anmelden... (siehe JSBin)
+
+    -p2- Buch-Layout als Player
+
+	-p1- Parser optimieren
+
+		- Character qualifier jederzeit (nicht nur nach declaration)
+		  --> Test mit 07_Seestern_Lektion_1.plot.txt
+
+	-p1- Default Layouts bzw. Meta-Layout-Sprache:
+		 Dein Versmass
+		 Die Struktur deiner Bildfolgen auf der Seite.
+		 Regelmässige Aufteilung in Panels,
+		 wobei lediglich die Anzahl Plot-Items vorgegeben ist.
+		 kleine Panels haben weniger Plot Items.
+		 Leerzeilen innerhalb eines monologs bedeuten panel-break
+
+		 Editor öffnen via button
+
+		Meta-Layout, Vers-Mass
+
+		strips= {
+			A: [[1],[1],[1]],
+			B: [[3]],
+			C: [[2],[2]],
+			A2: [{wPanels:[0.25, 0.5, 0.25]},[1],[1],[1]],
+		}
+
+		pages: [
+			"A B A",
+			"C B C",
+			"C A B",
+			[{hStrips: [0.6, 0.4]}, "B", "C"]
+		]
+
+		-> generate layout.json:
+		- foreach pages {
+			split letters
+			add to layout.json:
+				strips[letter]
+		}
+
+		UI:
+			- "Gen"-Button
+			- öffnet Overlay:
+			 - lädt Liste vom Backend (folder: Story/.../gen/)
+			 - Zeigt selektiertes Muster an
+			 - "Generate" button
+			- Layout wird generiert.
+
+
+
+    -p0- Entscheidung über die strategische Ausrichtung:
+
+        * 1 * soll comicVM primär mein Werkzeug werden für den Mariel Comic (Zeichnungen, Inhalt) ?
+        * 2 * soll comicVM primär ein gut erklärtes Werkzeug für jedermann werden (UI, Tutorial Player, FAQ Queries) ?
+        * 3 * soll comicVM primär mein Vorzeige-Projekt sein um meine Programmier-Skills zu demonstrieren ? (Code, Refactorings) ?
+
+        Voten:
+
+            * 3 * Der code soll nicht einheitlich sein, sondern verschiedene Ansätze enthalten und demonstrieren.
+                  Jede Code Komponente wählt den für sie passendsten Ansatz für seine Implementation.
+                  (global qualified singletons, etc.)
+
+            * 2 * [YNAB](https://app.youneedabudget.com/) hat schon ein sehr geiles tutorial
+
+            * 1 * Natürlich soll Mariel's Geschichte an erster Stelle stehen und die Zeichnungen.
+                  Nur wenn ein Tool für konkrete Aufgaben verwendet und eingesetzt wird, kann ein gutes Tool entstehen,
+                  durch stetige, einfache Verbesserungen.
+
+
+    -p1- Tutorial player - how to tell a story about comicVM
+
+        - tutorial items =
+            - text
+            - selected element
+            - demo action
+
+        - das player interface sei eine kleine Leiste mit punkten pro item.
+          der aktuell gezeigte punkt sei gefärbt.
+          es gibt ein close-kreuz und ein klick bedeutet next oder previous,
+          je nachdem ob er links oder rechts des aktuellen punktes liegt.
+
+    -p3- Smart Layout Parser:
+
+     -?- layout properties automatisch bestimmen.
+     -> integer: plot item count
+     -> zoom: mit komma stelle (geht das)? sonst: zweite zahl
+     -> string: qualifier
+        character qualifier mit klammern: "(...)"
+     -> array: pan
+     -> object: character position
+
+    -p1- Demo-Screencast bzw. Demo-Comic:
+         1. Plot
+         2. Default layout (layout properties, pages, background, scene)
+         3. plot item count demonstrieren
+         4. zoom / pan
+         5. character position (panel)
+         6. background / scene
+         7. Logik der Positionierung
+
+    - Big Picture: Den grossen Bogen weiter ablaufen:
+        1. laden von Bildern, und Source (plot und layout)
+            TBD: Test Suite für TagStore
+        2. Source parsen
+            DONE: PlotParserSpec
+            DONE: LayoutParserSpec
+        3. Source speichern
+        4. Zeichnen und Editieren optimieren und debuggen
+
+    -p2- source code documentation with docjs
+
+    -p3- Websocket save request
+
+=========================
+
+# Bugs
+
+ - paint background über mehrere Seiten kommt noch nicht richtig (siehe Szene BlueHole_1, DEFAULT background)
+
+ OK- Background dragging breaks as soon as a character is dragged... need to reset a z-index??
+ OK- page offset is too small
+
+ OK- panels beim dragen am falschen ort
+ OK- highlighted panel im edit mode verschoben
+ ?- panel-id beim draggen nicht sichtbar
+ OK- background image sollte weniger transparent sein beim draggen
+
+ -p1- INK, YELLOW und EDITOR style sollten auch durch 3 entsprechende properties codiert werden, nicht durch zwei...
+
+ -p2-  getConfiguredCharacterQualifiers
+        vs.
+        character.how aus plot
+
+        es sieht so aus, als würden die qualifier aus dem plot ignoriert
+
+
+# Backlog
+
+-- print bitmaps as yellow...
+
+    Q: geht das?
+    A: https://developer.mozilla.org/en-US/docs/Web/API/Canvas_API/Tutorial/Pixel_manipulation_with_canvas
+
+        var myImageData = ctx.createImageData(width, height);
+        var data = myImageData.data;
+        var rgba = 'rgba(' + data[0] + ',' + data[1] + ',' + data[2] + ',' + (data[3] / 255) + ')';
+
+    -> also überall wo eher schwarz ist: r & g hochstellen, b auf 0 setzen.
+       sonst r&g&b auf weiss hoch setzen.
+
+       als hidden canvas könnte man easy das sceneOverlay verwenden:
+        paintImage(image) {
+             overlayCtx.drawImage(pos);
+             var data = overlayCtx.createImageData(pos.width, pos.height).data;
+             // replace colors
+             realCts.drawImage(overlayCtx);
+        }
+
+-- extensive Drag & Drop support
+
+Bilder in Panel/Bgr/Szene draggen
+
+ Tasks
+    OK- move image endpoint (von tmp nach chr oder bgr)
+    OK- CSS schöner. validierung farblich (input und message), button sichtbar disablen
+    OK- tags reihenfolge? duplikate!
+    OK- drop border ist verschoben (?!?)
+    OK- handle multiple images (sollte man verhindern)
+
+-- project structure
+
+  separate:
+    - angular ui
+    - javascript business logic component/library (dependencies: canvas, dimensions, resources)
+        global object comicvm ?
+        why not?
+
+        -> https://nolanlawson.com/2015/10/19/the-struggles-of-publishing-a-javascript-library/
+
+      - global object structure
+        comicvm: {
+            content: {
+                plot: {
+                    parser: {},
+                    serializer: {}
+                    dataModel: {}
+                }
+                layout: {
+                    parser: {}
+                    serializer: {}
+                    dataModel: {}
+                },
+                images: {
+                    tagstore: {}
+                }
+            },
+            canvas: {
+                painter: {
+                    panel: {}
+                }
+            },
+            editor: {
+            },
+            elements: {
+                scene: {},
+                page: {?},
+                panel: {},
+                plotItem: {},
+                background: {},
+                character: {}
+            }
+        }
+
+        - initialize each component with anonymous function in separate file
+          (initComponent(comicvm) {
+            comicvm.component = {
+                fn1: fn1,
+                fn2: fn2
+            }
+          }(comicvm))
+
+
+DONE-- images panel
+
+    rows:
+        characters: ng-repeat, in order of appearence
+            - height n
+        backgrounds: ordered alphabetically (place first)
+            - height m
+
+    upload by dnd:
+
+        row backgrounds uploads to backgrounds
+        row characters uploads to characters
+
+        -p3- validation triggers confirmation dialog (image name contains character name ? -> really a background ?
+
+    search filter:
+        still filters all images
+
+
+-- story project format
+
+    -p1- layout and plot services
+
+    -p1- image/bgr/:id image/chr/id REST POST/UPDATE services
+         images/:arrayOfIds REST GET services (client needs to calculate the ids)
+
+         https://scotch.io/tutorials/build-a-restful-api-using-node-and-express-4
+
+         ! test it with protractor
+            - install protractor as dev-dependency
+            - create gulp task to start backend and frontend and execute tests
+            - write tests
+                - simple REST requests (no frontend)
+                  https://www.ortussolutions.com/blog/rest-2016-testing-your-api-with-jasmine
+                - use cases
+                    - get single image
+                    - post single image
+                    - get images for story and page
+                    - post images for a story
+
+    -p1- story project format:
+         - layout/
+         - plot/
+         - images
+           - bgr/
+           - chr/
+
+    DONE-p2- speichern von Bildern an den richtigen Pfad (bgr/ oder chr/)
+         images panel entsprechend strukturieren:
+         sortiert nach bgr und single characters
+
+    DONE-p2- images.json dynamisch generieren
+         --> nach upload soll ein Bild im comic angezeigt werden.
+
+    -p2- rückfrage bei identischen namen während image upload (ersetzen? umgenennen? abbrechen?)
+
+	-p1- bugfix: editor fehler mit mehreren seiten (bounding boxes werden seiten-gross)
+
+    DONE-p2- images.json aus backend liefern
+
+    -p1- Fix: invisible characters kann man nicht auswählen, da sie verschwinden.
+        Lösungsvariante: Klick auf ein Bild lässt es selektiert, unabhängig von der maus-position
+        mit escape oder beim bewegen der maus ausserhalb des canvas wird die selektion aufgehoben.
+
+
+DONE-p1- Optimierung image load: die nötigen images sollte der Layouter berechnen.
+         so werden nur diejenigen geladen, die auch tatsächlich vorkommen
+
+         - image paths in tagstore laden (key -> key)
+         - Scene.getImages aufrufen, gibt verwendete images zurück
+         - Init from dom mit diesen images
+         - weiter wie bisher.
+         - dasselbe beim wechseln der szene
+
+         --> ladevorgang wird komplexer:
+         imagePanel lädt image pfade und muss dann warten bis die sourcen geladen sind.
+         multi q?
+            - lade pfade und sourcen,
+            - wenn beides ok, reduziere pfade und lade images.
+            - wenn images und sourcen geladen sind, zeichne
+
+
+DONE-p1 Layout repaint on layout text edited
+        Anforderung, jede lokale Änderung (ohne den Cursor bewegen zu müssen) soll den repaint der minimal nötigen panels auslösen.
+
+
+SKIP-p4 Refactor:  Zoom und Pan sind properties eines Objekts Namens "bgrPosition"...
+		oder ist das irreführend?
+		Ist es eher eine Eigenschaft der Kamera, also des Panels?
+		Also einfach "position" : {
+			x, y, size
+		}
+		oder cam: {zoom: pan: {x: y:}} ?
+
+	-p4- characterQualifier umbenennen zu chrQualifiers (Plural)
+
+	-p4- position umbenennen: pos, also pos und chrPos
+	  --> mehrere Namen sollten möglich sein, und gross und klein schreibung soll egal sein.
+
+
+    OK-p1- Optimierung: bei Plotänderungen nur das Panel zeichnen, welches ein verändertes Plotitem enthält
+                       und an sich muss man nur die sprechblasen neu zeichnen.... sowie alles was darüber kommt.
+
+    -p2- basics_editor functions ordnen:
+        3 Bereiche:
+            - mouse: gets, sets and converts mouse coordinates to panel coordinates
+            - format: converts between pos (x, y, size), dim/rect (x, y, w, h) and css (top, left, bottom, right)
+            - coords: converts between DOM position and Panel Position
+
+    -p1- Bug: Panel info with single image is wrong
+         --> single image support
+
+    -p1- Bug: Umschalten vom Ink nach edit modus mit invalidem JSON wirft eine exception
+
+    -p1- Optimierung: repaint only what you need (same background, if scene not changed... ?)
+
+    -p2- Optimierung UI: Bilder ausserhalb eines Panels ganz unsichtbar, ausser maus in panel
+        - function overlaps() { ??? }
+
+    -p2- Backend Anbindung
+
+    -p3- Code Design: mustMatchTags sollte ein Character property sein
+
+    -p3- Code Design: Remove local copies of global (singleton) properties
+         (analog: layout properties for background and scene: leave them in the damn LayoutParser.layout!)
+
+    -p3- VM Design: Characters should not be declared with @, they should just follow the keyword 'Characters:' (like plot:)
+
+    -p4- Nice to have: Docco Source Code Doku
+         http://stackoverflow.com/questions/4462706/how-can-i-create-annotated-source-code-like-underscore-js
+
+    -p4- Nice to have: ?# Code Editor einbinden
+         https://github.com/ajaxorg/ace
+
+
+02.10.2015
+
+    FIXED- leerer character qualifier führt dazu, dass character keinen text spricht
+      DONE-- unit test
+
+    OK- plot änderungen zeichnen!
+
+    OK- bei view param = background werden bereits auch schon panel positions mit eingerechnet.
+
+    DONE- alle direktiven mit eigenem controller und deklarierter attribute-schnittstelle
+      -->! in general: avoid causing side-effects!
+
+22.09.2015
+
+    DONE- Fix PanelSpec unit tests!
+
+13.09.2015
+
+    OK- LayoutParser: remove trailing default values in panel layout
+
+04.09.2015
+
+    - Individual character positions are lost
+
+    IN PROGRESS- LayoutParser test suite
+
+    - Refactoring:
+
+      OK-- Decouple LayoutParser from PlotParser, i.e. only parse the layout, create empty panels with a plotItemCount, but without plotItems
+      Distribute the plotItems happens in the layout function.
+      Why? Keep the Parser symmetrical, allow both parses to parse first.
+
+      OK-- decouple scene setup (parse content, layout) and painting
+      Why? Painting happens more often than we need to parse new content
+      DONE: Scene.setup does the setup, Scene.paint paints it
+
+    -- cache old scene objects.
+      so we don't have to parse them
+
+21.08.2015
+
+    PanelSpec:
+        Sortierung der plot items testen
+
+    Painter:
+        Berechnung und Zeichnen strikt trennen.
+        Berechnung generiert ein Datenmodell aus geometrischen Formen und Bildern
+        Zeichnen führt die modellierten Formen aus und zeichnet die Bilder
+       --> Performance optimiert
+
+
+31.07.2015
+
+	behevior spec, as documentation, as check.
+
+		- unit tests
+		- end2end tests (with protractor)
+
+
+
+19.07.2015
+
+    * SKIP[too many dependency, like on Visual Studio 2008 and shit] karma in webstorm aufsetzen
+
+      FIXED: you need bloody Python >= v2.5.0 & < 3.0.0 to npm bloody install karma >:(
+
+      karma in the command line:
+        > karma start
+        > karma run
+
+01.07.2015
+
+    * panel info -> check if positions are correct
+
+    * new class plotItem: make sure no plot item.who == STORY_TELLER
+
+26.06.2015
+
+    OK* empty.png has wrong path
+
+    * scroll pos not ok for full screen
+
+    * default character size too small
+    FIXED: STORY_TELLER was tried to fit into the panels...

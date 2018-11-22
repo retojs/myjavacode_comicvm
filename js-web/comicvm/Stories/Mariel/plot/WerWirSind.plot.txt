@@ -1,0 +1,191 @@
+Characters: Seestern, Mariel, Silvia
+
+-----
+Plot:
+
+Seestern:
+	Die Frage wer wir sind
+	kann zweierlei Antworten haben:
+	die Antwort auf die Frage nach der Form
+	und die Antwort auf die Frage nach dem Stoff.
+	
+Silvia:
+	Und was ist die Antwort?
+	
+Seestern:
+	einerseits ist es deine Geschichte,
+	die Geschichte deines Lebens, 
+	die Geschichte deiner Vorfahren, 
+	die Geschichte deiner Spezies,
+	die Geschichte der Welt, die diese Spezies hervorgebracht hat.
+	Das ist die Antwort auf die Frage nach der Form.
+	
+Silvia:
+	Und die Antwort auf die andere Frage?
+	
+Seestern: 
+	Du meinst die Frage nach dem Stoff?
+	
+Silvia:
+	Genau!
+	
+Seestern:
+	Hier ist die Antwort die Substanz,
+	das Material aus dem du und die ganze Welt besteht.
+	
+	Und wisst ihr denn, was der Stoff ist, aus dem alles besteht? 
+	
+Silvia:
+	Hmm... Erde?
+	
+Mariel:
+	Es gibt ganz verschiedene Stoffe, aus denen wir bestehen.
+	Wasser, Fell, Haut, Krallen, Nase, Augen...
+	
+Seestern:
+	Richtig. 
+	Die Substanz aus der alles besteht 
+	kann die verschiedensten Formen annehmen.
+	Sie kann flüssig sein wie Wasser,
+	fest wie Eis
+	oder gasförmig wie Luft.
+	
+	Sie besteht aus atomaren Elementarteilchen 
+	die sich zu den verschiedensten Elementen und Isotopen kombinieren, 
+	welche die Grundlage unserer Welt bilden.
+	
+	Das einzelne Elementarteilchen eines Elements oder Isotops nennt man Atom.
+	Die Elemente teilen gewisse chemische Eigenschaften, 
+	was auf die Geometrie und Zusammensetzung des Atoms zurückzuführen ist. 
+	Diese chemischen Eigenschaften unterteilen sie in Metalle, Halbmetalle und Nichtmetalle.
+	Untereinander können sich die Atome wieder zu chemischen Verbindungen zusammenfügen.
+	und so jedes Material bilden, das wir kennen.
+	
+	Besonders ergiebig zeigt sich dabei das Kohlenstoffatom, 
+    das durch seine Atomstruktur sehr vielseutig einsetzbar ist
+	und die Basis der organischen Chemie bildet
+	also die Basis des Lebens
+	und die Basis von dir.
+	
+	Doch diese Geschichte beantwortet nun wieder die Frage nach der Form
+	und zeigt wie verschieden die Dinge sein können
+	anstatt zu zeigen, wie gleich sie im Grunde alle sind.
+	
+	Um die Frage nach dem Stoff zu beantworten
+	müssen wir den Elementarteilchen auf den Grund gehen.
+	Und auf diesem Grund finden wir....
+
+Mariel und Silvia:
+	Was?!?
+	
+Seestern
+	Nun... ehm...
+	Es ist so:
+	
+	Ein Elementarteilchen in drei Raumdimensionen 
+	ist immer entweder ein Fermion oder ein Boson.
+	Diejenigen Elementarteilchen, die die Materie des Universums bilden
+	nennt man Fermionen, nach Enrico Fermi, jenem grossen Physiker des 20. Jahrhunderts.
+	Die nicht materiellen Elementarteilchen nennt man Bosonen.
+	
+ariel:
+	Bosonen?
+	
+Seestern:
+	Ja, zum Beispiel gibt es da das Higgs-Boson, 
+	das den Fermionen ihre Masse verleiht.
+
+	Und dann gibt es vor allem die 4 Eichbosonen.
+	Die übermitteln die 4 Grundkräfte des Universums
+	zwischen den materiellen Fermionen.
+	
+	Zum Beispiel das Licht.
+	Es besteht aus Photonen, den einzigen sichtbaren Eichbosonen.
+	Photonen transportieren die elektromagnetische Kraft.
+	
+	das zweite Eichboson ist das Gluon.
+	Gluonen transportieren die starke Kernkraft.
+	Diese Kernkraft klebt eine bestimmte Art von Materie-Fermionen, 
+	die Quarks, 
+	zu Zweier- oder Dreiergruppen zusammen.
+	Die heissen Hadronen.
+	
+	Die Dreier-Quarks nennt man Baryonen. 
+	Unter ihnen sind die Bausteine des Atomkerns: Protonen und Neutronen.
+	Sie sind also recht stabil.
+
+Silvia:
+	Und die Zweier-Quarks?
+
+Seestern:
+	Ein Quark zusammen mit seinem Anti-Quark ergeben
+	ein Meson.
+	Mesonen sind instabil und zerfallen in Sekundenbruchteilen.
+	Sie kommen z.B. in der kosmischen Strahlung vor.
+	
+	Alle andere Materie-Teilchen, die keine Hadronen sind, 
+	also die Fermionen die keine Quarks sind, 
+	die nennt man Leptonen.
+	
+Mariel:
+	Was ist speziell an den Leptonen?
+
+Seestern:	
+	Leptonen unterliegen der schwachen Kernkraft,
+	die dritte der vier Grundkräfte des Universums, neben der elektromagnetischen und der starken Kernkraft.
+	die durch Z- und W-Bosonen transportiert wird.
+	
+	Die Schwache Kernkraft ermöglicht unter anderem die Umwandlung von Protonen in Neutronen. 
+	Daher hat sie eine entscheidende Bedeutung durch ihre Rolle 
+	bei der Fusion von Wasserstoff zu Helium in der Sonne.
+	Dabei entstehen aus vier Protonen (den Wasserstoffkernen) 
+	über mehrere Zwischenschritte der stabile Heliumkern mit zwei Protonen und zwei Neutronen. 
+	Durch diesen Prozess setzt die Sonne Energie frei. 
+	Aufgrund der geringen Stärke der schwachen Wechselwirkung läuft dieser Prozess so langsam ab, dass die Sonne schon seit 4,5 Milliarden Jahren stabil leuchtet und dies voraussichtlich noch fünf bis sechs Milliarden Jahre tun wird.
+	
+	Es gibt wie bei den Quarks 
+	hat jedes Lepton ein Gegenstück.
+	Und es gibt auch hier 3 Paare,
+	also wieder 6 Stück.
+	Wobei es zu jedem Lepton natürlich noch ein Antiteilchen aus Antimaterie gibt,
+	allerdings eher nicht im alltäglichen Leben.
+	Genau genommen kommt sowieso bei den Quarks und bei den Leptonen 
+	nur jeweils das erste der 3 Paare im alltäglichen Leben vor.
+		
+	Das erste Paar der Leptonen enthält neben seinem Gegenstück, dem Neutrino, das Elektron.
+	Das Elektron ist ein negativ geladenes Elementarteilchen.
+	Es bildet die Elektronenhülle eines Atoms.
+	Die gesamte Chemie beruht im Wesentlichen 
+	auf den Eigenschaften und Wechselwirkungen dieser gebundenen Elektronen.	
+	
+	Die ganze Vielfalt des Universums 
+	können wir also zurückführen 
+	auf wenige grundlegende Elementarteilchen, 
+	die sich durch ihre Eigenschaften
+	Masse, Ladung und Spin
+	voneinander unterscheiden.
+	Und diese Elementarteilchen werden wir immer weiter zurückführen können
+	bis auf den eigentlichen Stoff, aus dem das Universum besteht.
+
+	Doch aus welchem Stoff bestehen Elementarteilchen?
+	Woher kommen Masse, Ladung und Spin?
+
+Silvia:
+	Die Masse kommt ja vom Higgs-Boson.
+
+Seestern:
+	Ja.
+	Es ist kompliziert.
+	Der Stand der Wissenschaft ist die M-Theorie, 
+	ein Versuch die Relativitäts-Theorie mit der Quantenphysik unter einen Hut zu bringen. 
+	Aber so wirklich überzeugt ist noch niemand davon.
+	
+	Die Substanz unserer subjektiven Welt ist sowieso
+	das Bewusstsein
+	
+	Und Teilchen entstehen spontan aus dem Vakuum.
+	
+	Man könnte das Werden und Vergehen
+	als Substanz des Universums bezeichnen.
+	
+	

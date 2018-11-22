@@ -1,0 +1,65 @@
+{
+  "panelProperties": [
+    "plotItemCount",
+    "bgrQualifier",
+    "zoom",
+    "pan",
+    "characterQualifier",
+    "characterPosition"
+  ],
+  "pages": [
+    [
+      [
+        [ 2, "toSea", 1.5, [0, -0.5], "HerrS:hide, Papa:hide" ]
+      ], 
+      [
+        [ 2, "toLand" ], 
+        [ 2, "toLand" ], 
+        [ 1, "toSea" ]
+      ], 
+      [
+        [ 2, "toSea", 1, [1.8, 0] ]
+      ]
+    ]
+  ],
+  "backgrounds": {
+    "toSea": {
+      "reverse": true,
+      "characterPosition": {
+        "y": 0.8,
+        "Silvia": {
+          "x": -0.5,
+          "y": 0.5
+        },
+        "HerrS": {
+          "x": 2,
+          "y": 2,
+          "size": 2
+        },
+        "Papa": {
+          "x": 2.5,
+          "y": 1.5,
+          "size": 1.5
+        }
+      }
+    },
+    "toLand": {
+      "zoom": 1.2,
+      "characterPosition": {
+        "y": 1.25,
+        "FrauS": {
+          "size": 1.5
+        },
+        "Silvia": {
+          "y": 0.75
+        }
+      }
+    }
+  },
+  "scene": {
+    "characterPosition": {
+      "size": 1.2,
+      "y": 0.5
+    }
+  }
+}

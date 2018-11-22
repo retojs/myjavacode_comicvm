@@ -1,0 +1,22 @@
+<div id="image-dropped-into-page">
+    <div class="header menuLabel">Upload Image</div>
+    <div ng-repeat="image in images">
+        <div class="image-preview">
+            <img ng-src="{{ downloadPath + '/' + image.name + '?dummy=' + noCacheParam }}"/>
+        </div>
+        <div id="image-name">
+            <input type="text"
+                   id="new-image-name"
+                   ng-model="imageName"
+                   ng-change="imageNameChanged(imageName)"
+                   ng-class="{'invalid': !validation.isValid}"
+                   class="menuValue"
+                   autocomplete="off"/>
+            <div class="validation-message">{{ validation.message }}</div>
+            <button ng-disabled="!validation.isValid"
+                    ng-click="postImageName(image.name)">
+                Speichern
+            </button>
+        </div>
+    </div>
+</div>

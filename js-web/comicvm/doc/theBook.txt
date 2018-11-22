@@ -1,0 +1,57 @@
+	COMIC-VM 
+
+	The Book
+
+Bei Comic-VM ging es immer schon um mehr als um das Tool für den Enduser.
+Es geht auch um den Quellcode, die Algorithmen.
+Das Verständnis des Quellcodes ermöglicht ein tieferes Verständnis für die Anwendung.
+Und es ermöglicht ein Verständnis für mögliche selbst-geschriebenen Erweiterungen.
+Es ist eigentlich eine Einführung in Open Source Projekte.
+
+
+---
+
+The Main Idea
+=============
+
+## Default Comics
+
+Was ist die Definition eines Comics? Es sind Figuren an einem Ort, die sprechen, in chronoligischer Abfolge.
+
+Die Suche nach Ästhetik ist immer die Suche nach einem Ideal.
+ein Ideal hat generell die Eigenschaft, dass es *einfach* ist. Einfach wie z.B. das Gesetz der Gravitation, eine einfache Formel, die alle komplexen Bewegungen der Himmelskörper erklären kann.
+
+Die Suche nach einer idealen Umsetzung einer Geschichte in einen Comic liegt dem Design der ComicVM/StoryVM zugrunde.
+Die wichtigste Anforderung daraun war, die Codierung einer Bildergeschichte so einfach wie möglich zu gestalten.
+Dieses Prinzip des einfachsten Ausdrucks soll in der Bildergeschichte durchaus sichtbar sein, genauso wie in der Implementation der VM selbst.
+
+ 
+
+
+
+
+Tutorials
+=========
+
+## Character Position
+
+characterPosition: {
+	x: number, 
+	y: number, 
+	size: number
+}
+
+Can be global or individual by character name.
+
+Can be configured in
+- Scene
+- Background
+- Panel
+
+individual character positions define the group constellation
+the active characters will be placed at the center by default.
+only individual positions defined in the panel are applied after this (should not interfere with background layout)
+
+global character positions are added after this
+
+

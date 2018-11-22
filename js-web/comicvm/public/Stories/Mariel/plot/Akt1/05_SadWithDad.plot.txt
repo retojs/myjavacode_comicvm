@@ -1,0 +1,54 @@
+Title: Traum
+
+Characters: Mariel, Papa
+
+Place: main-beach
+_____
+Plot:
+
+Mariel geht zum Meer.
+Dort sieht sie ihren Papa, der halb im Wasser schläft.
+
+Mariel:
+    Papa?
+    Papa!
+Papa:
+    Huch!
+    Wie? Was?
+Mariel:
+    Was liegst du denn mitten im Wasser?
+Papa:
+    Hmm... keine Ahnung.
+    Ich muss wohl eingeschlafen sein gestern...
+    und dann kam wohl die Flut...
+Mariel:
+    Seit wann kommt denn das Wasser überhaupt bis hierher??
+
+Mariel sieht verloren ins Meer hinaus und kriegt feuchte Augen.
+
+Papa:
+    Alles in Ordnung, Liebes?
+Mariel:
+(seufzt)
+    Ach Papa, ich bin irgendwie so traurig.
+Papa:
+    Aber wieso denn?
+Mariel:
+    Ich weiss nicht...
+    Aber glaubst du wir gehören wirklich auf diese Insel?
+Papa:
+    Es ist nicht unsere ursprüngliche Heimat,
+    aber es ist doch ein kleines Paradies!
+    Findest du nicht?
+Mariel:
+    Doch schon.
+    Ich weiss auch nicht...
+Papa:
+    Lass uns frühstücken!
+    Danach sieht alles schon wieder ganz anders aus.
+Mariel:
+(lächelt)
+    Stimmt.
+    Ich hab nur schlecht geträumt.
+
+Mariel wischt sich die Tränen ab und geht mit Papa zu den anderen.

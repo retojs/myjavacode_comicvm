@@ -1,0 +1,46 @@
+SuperFlat Coding
+=================
+
+The goals of superflat coding are:
+
+- simplicity
+- readability
+- understandability
+
+The guide lines of superflat coding are:
+
+
+1. No Instances
+
+Many objects are singletons. No instances are ever needed.
+So define singletons as simple objects.
+
+You gain: global access from anywhere, simplicity.
+You loose: nothing. if you need instances, just write a constructor function returning that object as a copy.
+
+
+2. No local copies
+
+Duplication makes life harder. You need to maintain two states.
+Avoid it unless you really need it.
+
+
+2.1. qualified accessors
+
+Many objects are wrapper-like. Their object instance properties are either local copies of values from another source, or only provide an accessor to the other source.
+E.g.:
+
+    object getProperty() {
+        return dataSource.getProperty(objectId);
+    }
+
+The advantage of this is qualified access by the object.
+To make the wrapper-like structure more visible and understandable, an object should provide qualified accessors.
+E.g., instead of:
+
+    myObject.getReferencedObjectProperty()
+
+write:
+
+    myObject.referencedObjectGet.property()
+

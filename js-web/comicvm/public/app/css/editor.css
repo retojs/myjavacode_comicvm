@@ -1,0 +1,229 @@
+.toolbar {
+    position: absolute;
+    z-index: 999;
+    font-size: 10px;
+    font-weight: 600;
+    text-shadow: none;
+    margin: -6px 0;
+}
+
+.toolbar div, .toolbar div.edit {
+    cursor: pointer;
+    height: 36px;
+    width: 41px;
+    line-height: 36px;
+    text-align: center;
+    margin-left: 8px;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    -o-user-select: none;
+}
+
+.toolbar > div {
+    transform: translate(-42px, -1px);
+}
+
+.toolbar > div#layout-gen {
+    transform: none;
+}
+
+.toolbar div:hover, .toolbar div.edit:hover,
+.toolbar div.selected, .toolbar div.edit.selected {
+    margin-left: 10px;
+}
+
+.toolbar div#layout-gen:hover, .toolbar div#layout-gen.selected {
+    margin-left: 6px;
+    margin-top: -2px;
+}
+
+.toolbar #edit-target, .toolbar .edit {
+    height: 100%;
+    margin: 0;
+}
+
+.toolbar #edit-target div, .toolbar .edit {
+    color: rgb(220, 250, 255);
+    background: teal;
+    border-right: 1px solid rgb(0, 88, 88);
+    border-bottom: 1px solid rgb(0, 90, 90);
+    border-top: 1px solid rgb(50, 150, 150);
+    transition-property: color, border;
+    transition-duration: 0.2s;
+}
+
+.toolbar #edit-target div.selected, .toolbar .edit.selected {
+    color: #fff;
+    background: linear-gradient(120deg, rgb(25, 220, 225), lightseagreen);
+    border-right: 1px solid teal;
+    border-bottom: 1px solid rgb(0, 130, 130);
+    border-top: 1px solid rgb(120, 230, 230);
+    transition-property: color, border;
+    transition-duration: 0.2s;
+}
+
+.toolbar #paint-options {
+    height: 100%;
+    z-index: 0;
+    margin: 0;
+}
+
+.toolbar #paint-options div {
+    color: rgb(100, 100, 100);
+    text-shadow: 1px 1px 0 #eee, 0 0 0 #000, 1px 1px 0 #eee;
+    border-right: 1px solid rgb(180, 180, 180);
+    border-bottom: 1px solid rgb(180, 180, 180);
+    border-top: 1px solid rgb(250, 250, 250);
+    background: rgb(220, 220, 220);
+    z-index: 999;
+}
+
+.toolbar #paint-options .yellow.selected {
+    background: rgb(250, 250, 125);
+    text-shadow: none;
+    border-right: 2px solid rgb(220, 220, 0);
+    border-bottom: 1px solid rgb(180, 180, 0);
+    border-top: 1px solid rgb(255, 255, 220);
+    color: teal;
+}
+
+.toolbar #paint-options .ink.selected {
+    background: rgb(120, 120, 120);
+    text-shadow: none;
+    border-right: 2px solid rgb(60, 60, 60);
+    border-bottom: 1px solid rgb(30, 30, 30);
+    border-top: 1px solid rgb(200, 200, 200);
+    color: rgb(210, 210, 210);
+}
+
+.toolbar #paint-options .large.selected {
+    background: rgb(200, 120, 200);
+    text-shadow: none;
+    border-right: 2px solid rgb(160, 0, 160);
+    border-bottom: 1px solid rgb(140, 0, 140);
+    border-top: 1px solid rgb(255, 180, 255);
+    color: rgb(250, 250, 125);
+}
+
+.toolbar #paint-options .paint-bgr.selected {
+    background: rgb(100, 200, 100);
+    text-shadow: none;
+    border-right: 2px solid rgb(0, 140, 0);
+    border-bottom: 1px solid rgb(0, 140, 0);
+    border-top: 1px solid rgb(130, 250, 130);
+    color: rgb(0, 50, 50);;
+}
+
+.toolbar #layout-options {
+    transform: translate(-42px, 35px);
+    margin: 0;
+    border: 0;
+}
+
+.toolbar #layout-options div {
+    color: rgb(100, 100, 100);
+    text-shadow: 1px 1px 0 #eee, 0 0 0 #000, 1px 1px 0 #eee;
+    border-right: 1px solid rgb(180, 180, 180);
+    border-bottom: 1px solid rgb(180, 180, 180);
+    border-top: 1px solid rgb(250, 250, 250);
+    background: rgb(220, 220, 220);
+}
+
+.toolbar #layout-options div.selected {
+    color: rgb(0, 70, 70);
+    text-shadow: 1px 1px 0 #dff, 0 0 0 #000, 1px 1px 0 #dff;
+    border-right: 2px solid rgb(140, 190, 210);
+    border-bottom: 1px solid rgb(100, 150, 170);
+    border-top: 1px solid rgb(240, 250, 255);
+    background: rgb(215, 250, 250);;
+    transition-property: color, border, background;
+    transition-duration: 0.2s;
+}
+
+.toolbar #layout-gen div {
+    color: rgb(100, 100, 100);
+    text-shadow: 1px 1px 0 #eee, 0 0 0 #000, 1px 1px 0 #eee;
+    border-right: 1px solid rgb(180, 180, 180);
+    border-bottom: 1px solid rgb(180, 180, 180);
+    border-top: 1px solid rgb(250, 250, 250);
+    background: rgb(220, 220, 220);
+    z-index: 999;
+}
+
+/* from: http://stackoverflow.com/questions/18331185/jquery-resizable-handles-on-all-sides-not-showing */
+
+.ui-resizable-handle {
+    position: absolute;
+    display: block;
+}
+
+.ui-resizable-disabled .ui-resizable-handle,
+.ui-resizable-autohide .ui-resizable-handle {
+    display: none;
+}
+
+.ui-resizable-n {
+    cursor: n-resize;
+    height: 7px;
+    width: 100%;
+    top: -5px;
+    left: 0;
+}
+
+.ui-resizable-s {
+    cursor: s-resize;
+    height: 7px;
+    width: 100%;
+    bottom: -5px;
+    left: 0;
+}
+
+.ui-resizable-e {
+    cursor: e-resize;
+    width: 7px;
+    right: -5px;
+    top: 0;
+    height: 100%;
+}
+
+.ui-resizable-w {
+    cursor: w-resize;
+    width: 7px;
+    left: -5px;
+    top: 0;
+    height: 100%;
+}
+
+.ui-resizable-se {
+    cursor: se-resize;
+    width: 12px;
+    height: 12px;
+    right: 1px;
+    bottom: 1px;
+}
+
+.ui-resizable-sw {
+    cursor: sw-resize;
+    width: 9px;
+    height: 9px;
+    left: -5px;
+    bottom: -5px;
+}
+
+.ui-resizable-nw {
+    cursor: nw-resize;
+    width: 9px;
+    height: 9px;
+    left: -5px;
+    top: -5px;
+}
+
+.ui-resizable-ne {
+    cursor: ne-resize;
+    width: 9px;
+    height: 9px;
+    right: -5px;
+    top: -5px;
+}

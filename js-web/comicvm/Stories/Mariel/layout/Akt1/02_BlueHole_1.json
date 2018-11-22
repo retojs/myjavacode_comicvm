@@ -1,0 +1,92 @@
+{
+  "panelProperties": [
+    "plotItemCount",
+    "bgrQualifier",
+    "zoom",
+    "characterQualifier",
+    "characterPosition"
+  ],
+  "pages": [
+    [
+      [
+        [ 2, "reef", 1, "all:hide" ]
+      ], 
+      [
+        [ 2, "mariel-fainting", 1, "all:hide" ], 
+        [ 0, "", 1, "all:hide" ], 
+        [ 1, "mariel-gasp", 1, "all:hide" ]
+      ], 
+      [
+        [ 4, "" ]
+      ]
+    ], 
+    [
+      [
+        [ 1, "east" ], 
+        [ 1, "" ], 
+        [ 1, "east" ]
+      ], 
+      [
+        [ 1, "" ], 
+        [ 3, "east", 1 ], 
+        [ 1, "" ]
+      ], 
+      [
+        [ 2, "east" ], 
+        [ 2, "east" ], 
+        [ 1, "east" ]
+      ]
+    ], 
+    [
+      {"hStrips": [0.333, 0.667]},
+      [
+        [ 2, "", 1, "Basil:mit-mariel, Mariel:hide, Silas:hide", {
+          "x": -1,
+          "y": -0.5,
+          "size": 1.5,
+          "Mariel": {
+            "x": 1,
+            "y": 0.5
+          }
+        } ], 
+        [ 2, "", 0.8, "Basil:jump, Mariel:hide, Silas:hide", {
+          "y": -0.5,
+          "size": 2.5
+        } ], 
+        [ 1, "mariel-aweing", 1, "all:hide" ]
+      ], 
+      [
+        [ 1, "reef-2" , 1, "all:hide"]
+      ]
+    ]
+  ],
+  "backgrounds": {
+    "": {
+      "zoom": 1.2,
+      "characterPosition": {
+        "y": 1.5,
+        "Mariel": {
+          "x": -0.5,
+          "y": -0.5,
+          "size": 0.8
+        }
+      }
+    },
+    "east": {
+      "characterQualifier": "all:flip",
+      "characterPosition": {
+        "y": 2.5,
+        "size": 1.2,
+        "Mariel": {
+          "x": -0.5,
+          "y": 1
+        }
+      }
+    }
+  },
+  "scene": {
+    "characterPosition": {
+      "size": 1.4
+    }
+  }
+}

@@ -1,0 +1,93 @@
+{
+  "panelProperties": [
+    "plotItemCount",
+    "bgrQualifier",
+    "zoom",
+    "characterQualifier",
+    "characterPosition"
+  ],
+  "pages": [
+    [
+      [
+        [ 2, "blue-hole-1", 1, "all:hide" ]
+      ], 
+      [
+        [ 0, "blue-hole-2", 1, "all:hide" ]
+      ], 
+      [
+        [ 1, "mermaid" ,1, "all:hide" ]
+      ]
+    ], 
+    [
+      [
+        [ 1, "", 2, "Mermaid:giggle, Mariel:surprised", {
+          "Mermaid": {
+            "size": 2.5
+          }
+        } ], 
+        [ 2, "", 2, "Mermaid:wink", {
+          "Mermaid": {
+            "x": 0.5,
+            "size": 3
+          }
+        } ]
+      ], 
+      [
+        [ 3, "", 2, "Mermaid:swim-1, Mariel:swim", {
+          "Mariel": {
+            "x": -3
+          },
+          "Mermaid": {
+            "y": -0.5,
+            "size": 2
+          }
+        } ]
+      ], 
+      [
+        [ 1, "", 1, "Mermaid:confront", {
+          "size": 2,
+          "y": 1,
+          "Mermaid": {
+            "size": 1.5,
+            "x": 0.2,
+            "y": -1,
+            "img": {
+              "x": 1.7,
+              "y": 1,
+              "size": 1.5
+            }
+          }
+        } ], 
+        [ 1, "", 1, "Mermaid:stretch", {
+          "size": 2,
+          "y": 1,
+          "Mermaid": {
+            "x": 1,
+            "y": -1,
+            "img": {
+              "size": 1.6,
+              "y": 0
+            }
+          }
+        } ], 
+        [ 1, "", 1, "Mermaid:swim-2, Mariel:swim", {
+          "size": 1.2,
+          "x": -0.5,
+          "y": 1,
+          "Mermaid": {
+            "x": 0.7,
+            "y": -1.5,
+            "size": 2
+          }
+        } ]
+      ]
+    ]
+  ],
+  "backgrounds": {
+    "": {
+      "characterPosition": {
+        "y": 0.6
+      }
+    }
+  }
+}

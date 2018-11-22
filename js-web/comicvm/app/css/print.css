@@ -1,0 +1,11 @@
+@media print {
+    @page {
+        size: A4 portrait;
+    }
+}
+
+cvm-print-frame-image canvas {
+    width: 21cm;
+    min-height: 29.7cm;
+    display: block; // avoids an initial white page when printing
+}

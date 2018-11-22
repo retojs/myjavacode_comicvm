@@ -1,0 +1,23 @@
+<div id="comicvm-menu">
+
+    <h2>comicVM</h2>
+
+    <span class="menuLabel">Story:</span>
+    <span class="inputLike">{{content.story}}</span>
+
+    <span class="menuLabel">Scene:</span>
+    <select ng-model="content.selection.scene"
+            ng-options="scene for scene in content.selection.scenes track by scene">
+    </select>
+
+    <span class="menuLabel">Background:</span>
+    <select ng-model="content.selection.background"
+            ng-options="qualifier for qualifier in options.backgroundQualifiers track by qualifier">
+    </select>
+
+    <span class="menuLabel">Panel:</span>
+    <select ng-model="content.selection.panel"
+            ng-options="panelId for panelId in options.panelIds track by panelId">
+    </select>
+
+</div>

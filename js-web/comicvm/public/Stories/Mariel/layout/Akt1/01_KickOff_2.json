@@ -1,0 +1,49 @@
+{
+  "panelProperties": [
+    "plotItemCount",
+    "bgrQualifier",
+    "zoom",
+    "characterQualifier"
+  ],
+  "pages": [
+    [
+      [[2, "", 1.0, "Basil:mit-Mariel"]],
+      [[2, "", 1.6], [1, "", 2], [1, "reverse", 1.5]],
+      [[2, "under-water", 0.8]]
+    ]
+  ],
+  "backgrounds": {
+    "": {
+      "characterPosition": {
+        "y": 0.6
+      }
+    },
+    "reverse": {
+      "reverse": true,
+      "characterPosition": {
+        "y": 0.5
+      }
+    },
+    "under-water": {
+      "reverse": true,
+      "characterPosition": {
+        "size": 1.5,
+        "Basil": {
+          "x": 0.5,
+          "y": 0.4
+        },
+        "Mariel": {
+          "x": -4,
+          "y": 0.4
+        }
+      }
+    }
+  },
+  "scene": {
+    "characterQualifier": "Mariel:hide",
+    "characterPosition": {
+      "size": 1.4,
+      "Mariel": {"x": 1.75}
+    }
+  }
+} 

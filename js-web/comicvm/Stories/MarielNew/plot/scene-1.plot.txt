@@ -1,0 +1,15 @@
+Story: Demo
+
+Scene: Test
+
+Characters: Mariel, Seal
+
+Place: beach
+_____
+Plot:
+
+STORYTELLER:
+    Das ist Mariel
+
+Mariel:
+	Hallo

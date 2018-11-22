@@ -1,0 +1,18 @@
+{
+	"_comment": "Specifies the number of plot items for each panel and background image qualifiers"
+	,
+	
+	"panelProperties": [
+		"plotItemCount", 
+		"bgrQualifier"
+	]
+	,
+	
+	"pages": [
+		[	
+			[ [2, "to-sea"], [3, "to-sea"], [1, "to-land"] ],
+			[ [2, "to-land"] ],
+			[ [4, "to-land"], [1, "to-land"], [1, "to-sea"] ]
+		]
+	]
+}

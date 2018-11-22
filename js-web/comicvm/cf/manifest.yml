@@ -1,0 +1,10 @@
+---
+applications:
+- name: StoryVM
+  memory: 128MB
+  instances: 1
+
+  host: storyvm
+
+  command: node run.js
+  

@@ -1,0 +1,127 @@
+--------- --------- --------- --------- --------- --------- --------- --------- --------- --------- --------- --------- --------- ---------
+---- ---- --- T --- ---- ---- --- W --- ---- --- | -- I --- ---- ---- - 1 4 0 - ---- ---- --- T -- | --- ---- --- E --- ---- ---- --- R ---
+--------- --------- --------- --------- --------- --------- --------- --------- --------- --------- --------- --------- --------- ---------
+
+#SciTweet Classics (0/5+a) Max Planck und die Ultraviolett-Katastrophe, oder: das Rayleigh-Jeans-Gesetz (RJG)
+#SciTweet Classics (0/5+b) (http://de.wikipedia.org/wiki/Rayleigh-Jeans-Gesetz)
+
+#SciTweet Classics (1/5+a) Das RJG beschreibt die Abhängigkeit der Strahlungsintensität I von der Lichtwellenlänge \lambda ...
+#SciTweet Classics (1/5+b) eines Schwarzen Körpers im Rahmen der klassischen Elektrodynamik bei einer gegebenen Temperatur.
+
+#SciTweet Classics (2/5+a) Das RJG liefert brauchbare Werte bei niedrigen Frequenzen, also großen Wellenlängen. 
+#SciTweet Classics (2/5+b) Bei kleinen Wellenlängen liefert es viel zu große Werte,
+#SciTweet Classics (2/5+c) welche die Gesamtstrahlung, integriert über den gesamten Wellenlängenbereich, gegen unendlich streben lassen.
+
+#SciTweet Classics (2/5+d) Dieses Verhalten wurde als Ultraviolett-Katastrophe bezeichnet.
+
+#SciTweet Classics (3/5+a) Das Verhalten bei kleinen Wellenlängen, also hohen Frequenzen (und damit entsprechend hoher Energie), 
+#SciTweet Classics (3/5+b) wird in guter Näherung durch das wiensche Strahlungsgesetz beschrieben.
+
+#SciTweet Classics (1/5b) Erst Max Planck fand die richtige Erklärung und fasste mit dem planckschen Strahlungsgesetz 
+#SciTweet Classics (1/5b) das Rayleigh-Jeans-Gesetz und das wiensche Strahlungsgesetz zusammen.
+
+--------- --------- --------- --------- --------- --------- --------- --------- --------- --------- --------- --------- --------- ---------
+---- ---- --- T --- ---- ---- --- W --- ---- --- | -- I --- ---- ---- - 1 4 0 - ---- ---- --- T -- | --- ---- --- E --- ---- ---- --- R ---
+--------- --------- --------- --------- --------- --------- --------- --------- --------- --------- --------- --------- --------- ---------
+
+#SciTweet Classics (0/6+a) Wie das Leuchten einer Glühwendel die zündende Idee für die Quantenphysik hervorbrachte 
+#SciTweet Classics (0/6+b) http://de.wikipedia.org/wiki/Plancksches_Strahlungsgesetz
+
+#SciTweet Classics (1/6+a) Das Plancksche Strahlungsgesetz (PSG) beschreibt die Verteilung der elektromagnetischen Energie 
+#SciTweet Classics (1/6+b) in Abhängigkeit von der Frequenz der Strahlung, und zwar der elektromagnetischen Energie
+#SciTweet Classics (1/6+c) des thermischen Strahlungsfeldes eines schwarzen Körpers.
+
+#SciTweet Classics (2/6) Eine Glühwendel leuchtet bei ca. 700 °C rot, orange bis gelb bei 2500 °C.
+
+#SciTweet Classics (3/6+a) Bei der Herleitung des Strahlungsgesetzes durch Max Planck im Jahr 1900 zeigte sich, 
+#SciTweet Classics (3/6+b) dass eine Beschreibung im Rahmen der klassischen Physik nicht möglich ist.
+
+#SciTweet Classics (4/6+a) Vielmehr erwies es sich als notwendig, ein neues Postulat einzuführen, dem zufolge 
+#SciTweet Classics (4/6+b) der Energieaustausch zwischen Oszillatoren und dem elektromagnetischen Strahlungsfeld nicht kontinuierlich, 
+#SciTweet Classics (4/6+c) sondern in Form kleinster Energiepakete (später als Quanten bezeichnet) stattfindet. 
+
+#SciTweet Classics (5/6) Plancks Herleitung des Strahlungsgesetzes gilt daher heute als die Geburtsstunde der Quantenphysik.
+
+--------- --------- --------- --------- --------- --------- --------- --------- --------- --------- --------- --------- --------- ---------
+---- ---- --- T --- ---- ---- --- W --- ---- --- | -- I --- ---- ---- - 1 4 0 - ---- ---- --- T -- | --- ---- --- E --- ---- ---- --- R ---
+--------- --------- --------- --------- --------- --------- --------- --------- --------- --------- --------- --------- --------- ---------
+
+#SciTweet Classics Die Quantenhypothese, oder: Die Welt besteht aus Pixeln!
+#SciTweet Classics (0/+b) http://de.wikipedia.org/wiki/Plancksches_Strahlungsgesetz#Die_Quantenhypothese
+
+#SciTweet Classics Ausgehend von der verbesserten empirischen Strahlungsformel kam Planck innerhalb weniger Monate 
+#SciTweet Classics zu einem epochemachenden Ergebnis, es war die Geburtsstunde der Quantenphysik: 
+#SciTweet Classics Er musste sich selbst gegen seine eigene Überzeugung eingestehen, dass die Energieabgabe nicht kontinuierlich erfolgt, 
+#SciTweet Classics sondern nur in Vielfachen von kleinsten „h“-Einheiten, die ihm zu Ehren dann später 
+#SciTweet Classics als plancksches Wirkungsquantum bezeichnet wurde. 
+
+#SciTweet Classics Nach dieser von Planck eingeführten Quantenhypothese kann ein Oszillator der Frequenz v 
+#SciTweet Classics anstelle beliebiger Energiemengen nur ganzzahlige Vielfache der Energie hv aufnehmen; 
+#SciTweet Classics insbesondere bedarf er einer Mindestenergie hv, um überhaupt angeregt zu werden. 
+
+#SciTweet Classics Schwingungszustände, deren Mindestenergie hv deutlich über der thermisch zur Verfügung gestellten Energie kT liegen, 
+#SciTweet Classics können nicht angeregt werden, sie bleiben eingefroren. 
+#SciTweet Classics Jene Schwingungszustände, deren Mindestenergie nur wenig über kT liegt, 
+#SciTweet Classics können mit gewisser Wahrscheinlichkeit angeregt werden, 
+#SciTweet Classics so dass von ihnen ein bestimmter Bruchteil zur gesamten Hohlraumstrahlung beiträgt. 
+
+#SciTweet Classics Lediglich Schwingungszustände mit niedriger Mindestenergie hv, also kleineren Frequenzen, 
+#SciTweet Classics können die angebotene thermische Energie vollständig aufnehmen und werden (im Mittel) mit Sicherheit angeregt.
+
+--------- --------- --------- --------- --------- --------- --------- --------- --------- --------- --------- --------- --------- ---------
+---- ---- --- T --- ---- ---- --- W --- ---- --- | -- I --- ---- ---- - 1 4 0 - ---- ---- --- T -- | --- ---- --- E --- ---- ---- --- R ---
+--------- --------- --------- --------- --------- --------- --------- --------- --------- --------- --------- --------- --------- ---------
+
+#SciTweet Classics (0/+b) Max Karl Ernst Ludwig Planck (* 23. April 1858 in Kiel; † 4. Oktober 1947 in Göttingen) 
+#SciTweet Classics (0/+b) war ein bedeutender deutscher Physiker auf dem Gebiet der Theoretischen Physik. 
+
+#SciTweet Classics (0/+b) Er gilt als Begründer der Quantenphysik. 
+
+#SciTweet Classics (0/+b) Für die Entdeckung des planckschen Wirkungsquantums erhielt er 1919 den Nobelpreis für Physik des Jahres 1918.
+
+#SciTweet Classics (0/+b) 
+
+--------- --------- --------- --------- --------- --------- --------- --------- --------- --------- --------- --------- --------- ---------
+---- ---- --- T --- ---- ---- --- W --- ---- --- | -- I --- ---- ---- - 1 4 0 - ---- ---- --- T -- | --- ---- --- E --- ---- ---- --- R ---
+#SciTweet Classics (0/+b) --- --------- --------- --------- --------- --------- --------- --------- --------- --------- --------- ---------
+--- --------- --------- --------- --------- --------- --------- --------- --------- --------- --------- ---------
+
+Max Planck und Albert Einstein - Quanten- und Relativitätstheorie
+http://de.wikipedia.org/wiki/Max_Planck#Strahlungsgesetz_und_Quantentheorie.2C_Relativit.C3.A4tstheorie
+
+Max Planck 1901
+Ab Mitte der 1890er Jahre beschäftigte sich Planck mit Strahlungsgleichgewichten und der Theorie der Wärmestrahlung und versuchte, die Strahlungsgesetze aus thermodynamischen Überlegungen heraus abzuleiten. 
+Am 14. Dezember 1900 präsentierte er der Physikalischen Gesellschaft eine Gleichung, die die Strahlung Schwarzer Körper korrekt beschrieb. 
+Die bis dahin gefundenen Gleichungen, das wiensche Strahlungsgesetz und das Rayleigh-Jeans-Gesetz, konnten jeweils nur einen Teil des Strahlungsspektrums ohne Abweichungen wiedergeben. 
+Im Zuge der Arbeit an seinem Strahlungsgesetz gab Planck seine Vorbehalte gegen eine atomistisch-wahrscheinlichkeitstheoretische Betrachtung der Entropie auf. 
+Gleichzeitig legte er den Grundstein für die Quantenphysik, als er für die Oszillatoren, die in seiner Modellvorstellung für die Strahlung verantwortlich waren, nur bestimmte, diskrete Energiezustände erlaubte. 
+Im Rahmen dieser Arbeit führte Planck auch das plancksche Wirkungsquantum, eine fundamentale Naturkonstante, in die Physik ein.[34]
+? Für eine ausführliche Darstellung siehe den Abschnitt #Plancksches Strahlungsgesetz und Wirkungsquantum.
+
+1905 las Planck die Abhandlung „Zur Elektrodynamik bewegter Körper“ des damals noch unbekannten Albert Einstein und widmete sich in den folgenden Jahren intensiv der darin eingeführten Speziellen Relativitätstheorie. 
+Planck war entscheidend daran beteiligt, dass Einsteins Arbeit die nötige Aufmerksamkeit erfuhr. 
+Schon im März 1906 hielt er in Berlin einen Vortrag vor der Physikalischen Gesellschaft und stand in Briefkontakt mit Einstein, der zu dieser Zeit noch in Bern lebte. 
+Planck verteidigte das neue Konzept gegen Kritiker und bemühte sich erfolgreich, die Experimente des Göttingers Walter Kaufmann zu widerlegen, dessen Messungen scheinbar im Widerspruch zur Theorie standen. 
+Schon im September 1908, als der Mathematiker Hermann Minkowski auf der Versammlung der Deutschen Naturforscher und Ärzte in Köln die Zeit als vierte Dimension einführte, hatte sich die Spezielle Relativitätstheorie in Fachkreisen durchgesetzt. 
+Ungeachtet seiner Förderung der einsteinschen Relativitätstheorie lehnte Planck dessen Deutung des Strahlungsproblems, die sogenannte Lichtquantenhypothese, ab.[35]
+
+
+Das Photon, oder: was "Lichtquanten" sind
+http://de.wikipedia.org/wiki/Photon#Forschungsgeschichte
+
+Das Photon (von Griechisch f?? phos, Gen. f?t?? photos „Licht“) ist die elementare Anregung (Quant) des elektromagnetischen Feldes. Anschaulich gesprochen sind Photonen das, woraus elektromagnetische Strahlung besteht, daher wird gelegentlich auch die Bezeichnung Lichtquant oder Lichtteilchen verwendet. In der Quantenelektrodynamik gehört das Photon als Vermittler der elektromagnetischen Wechselwirkung zu den Eichbosonen.
+
+Seit der Antike gab es verschiedene, sich teilweise widersprechende Vorstellungen von der Natur des Lichts. Bis Ende des 19. Jahrhundert konkurrierten Wellen- und Teilchentheorien miteinander (siehe Abschnitt Geschichte im Artikel Licht). Während viele Phänomene wie Interferenz- und Polarisationserscheinungen die Wellennatur des Lichts zu beweisen schienen, gab es auch Indizien für einen Teilchencharakter. Ein historisch wichtiges Experiment hierzu war im Jahre 1887 die Beobachtung des Photoelektrischen Effekts durch Heinrich Hertz und Wilhelm Hallwachs.
+
+Die Entdeckung der Quantisierung der elektromagnetischen Strahlung ging im Jahr 1900 vom planckschen Strahlungsgesetz aus, das die Wärmestrahlung eines schwarzen Körpers beschreibt. Um dies Gesetz theoretisch erklären zu können, musste Planck annehmen, dass die Oberfläche des schwarzen Körpers nur diskrete, zur Frequenz proportionale Energiemengen mit dem elektromagnetischen Feld austauschen kann. Planck selbst stellte sich allerdings noch nicht die elektromagnetische Strahlung an sich quantisiert vor sondern nur den Energieaustausch.
+
+Albert Einstein stellte dann 1905 in seiner Publikation zum photoelektrischen Effekt die Lichtquantenhypothese auf. Ihr zufolge ist Licht ein Strom von „in Raumpunkten lokalisierten Energiequanten, welche sich bewegen, ohne sich zu teilen, und nur als Ganze absorbiert und erzeugt werden können“[1]. Aufgrund verbreiteter Zweifel an diesen Ansichten wurden diese Arbeiten erst 1920 (Planck) und 1921 (Einstein) mit dem Nobelpreis ausgezeichnet.
+
+Doch wurde der Teilchencharakter der elektromagnetischen Strahlung weiterhin vielfach bezweifelt, bis Arthur Holly Compton in den Jahren 1923-25 nachweisen konnte, dass Röntgenstrahlung auf einzelne Elektronen genau so wirkt wie der Beschuss mit einzelnen Teilchen, deren Energien und Impuls gerade denen der Lichtquanten entsprachen. Für diese Entdeckung des Compton-Effekts und seine Interpretation erhielt er 1927 den Nobelpreis.
+
+Die formale Quantentheorie des Lichtes wurde erst seit 1925 beginnend mit Arbeiten von Max Born, Pascual Jordan und Werner Heisenberg entwickelt. Die heute gültige Theorie der elektromagnetischen Strahlung, die auch die Lichtquanten beschreibt, ist die Quantenelektrodynamik (QED). Sie geht in ihren Anfängen auf eine Arbeit von Paul Dirac im Jahre 1927 zurück, in der die Wechselwirkung von quantisierter elektromagnetischer Strahlung mit einem Atom analysiert wird. Die QED wurde in den 1940er Jahren entwickelt und 1965 mit der Verleihung des Nobelpreises für Physik an Richard P. Feynman, Julian Schwinger und Shinichiro Tomonaga gewürdigt.
+
+Der Begriff Photon für die elementare Anregung des quantisierten elektromagnetischen Feldes wurde 1926 durch den Chemiker Gilbert Newton Lewis eingeführt.[2] Er verwandte den Begriff im Rahmen eines von ihm vorgeschlagenen Modells der Wechselwirkung von Atomen mit Licht. Dies Modell, das allgemein nicht anerkannt wurde, sah unter anderem fälschlich eine Erhaltung der Photonenzahl vor.
+
+In einem Brief an seinen Freund Michele Besso (1873–1955) schrieb Albert Einstein im Jahr 1951: „Die ganzen 50 Jahre bewusster Grübelei haben mich der Antwort der Frage ‚Was sind Lichtquanten‘ nicht näher gebracht. Heute glaubt zwar jeder Lump, er wisse es, aber er täuscht sich...“
+

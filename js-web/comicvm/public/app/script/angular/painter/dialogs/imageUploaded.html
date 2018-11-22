@@ -1,0 +1,7 @@
+<div id="image-uploaded">
+    <h4>Successfully uploaded</h4>
+    <div ng-repeat="image in images">
+        <img ng-src="{{ downloadPath + '/' + image.name + '?dummy=' + noCacheParam }}"/>
+        <p>{{ image.name }}</p>
+    </div>
+</div>

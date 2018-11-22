@@ -1,0 +1,17 @@
+lese layout file ein mit einfachem Automaten
+
+	status = start: 
+			'[': neue seite, status = seite
+			 sonst: next char
+	status = seite:
+			'[': neuer strip, status = strip
+			']': status = start
+			 sonst: next char
+	status = strip: 
+			'[': neues panel, status = panel
+			']': status = seite
+			 sonst: next char
+	status = panel:
+			int: anzahl story items
+			']': status = strip
+			

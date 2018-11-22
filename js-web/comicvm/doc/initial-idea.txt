@@ -1,0 +1,150 @@
+
+TODO: Natural image parameters via unit-object 
+
+Image Parameter (normiert d.h. unabhaengig von einer konkreten Aufloesung):
+
+		bgr-pos (x, y)
+		bgr-rot (r) 
+
+		unit-pos (x, y)
+		unit-size (s)
+
+Der Clou dabei: 
+		Durch die unit-Werte ergeben sich die Kamera-Position und der Zoom der perspektivischen Abbildung. 
+		Die Projektions-Parameter lassen sich damit auf viel anschaulichere Weise definieren.
+
+
+Defaults / Nullpunkte / Orientierung:
+
+Bild-Koordinaten-System:
+
+		image dimensions:
+							w * 2 (height ist fix von minus 1 bis plus 1)
+ 	positive richtung: 
+ 						oben/rechts
+
+		bgr-pos default: 
+							(0, 0) = Bild Mitte	
+		unit-pos default: 
+							(0, 0) = Bild Mitte
+		unit-size default:
+							1 = 0.5 * image height
+
+Die unit-size definiert dabei die Einheit des Welt-Koordinaten-Systems.
+ 
+ Die Projektion von 3-dimensionalen Welt-Koordinaten (x', y', z') in 
+ 
+ 	(a) normierte Bild-Koordinaten (x, y) und
+ 	(b) in Pixel (p.x, p.y)
+ 
+ geschieht durch Angabe der Panel Parameter (panel.x, panel.y, panel.w, panel.h)
+ 
+ Hilfsgroessen zur Umrechnung:
+ 
+ 		w = 1 + z' * unit-size
+ 
+ Damit werden die projizierten 2-dimensionalen Bild-Koordinaten wie folgt berechnet (fuer unit-pos = (0, 0)):
+ 
+ 		x = x'/w
+ 		y = y'/w
+ 
+ Falls unit-pos (in Bild-Koordinaten) vom default abweicht, gilt:
+ 
+ 		x = (x' - unit-pos.x / unit-size) / w
+ 		y = (y' - unit-pos.y / unit-size) / w
+ 
+ (Die Bild-Koordinaten werden also erst in Welt-Koordinaten transformiert, indem sie durch unit-size dividiert werden)
+
+Fuer die Bild-Koordinaten in Pixel mit Ursprung in der oberen linken Bild-Ecke ergibt sich:
+
+		p.x = x * panel.h/2 - panel.w
+		p.y = y * panel.h/2 - panel.h
+
+Sowohl x als auch y werden also mit der Panel-Hoehe panel.h skaliert. 
+
+
+Implementation:
+
+		Panel { 
+			text = Text
+
+			scene = Scene
+			scene-settings = {
+				// ueberschreiben aktuelle settings (innerhalb scope)
+				bgr.pos = ...
+				obj.x.pos = ...
+			}
+
+			perspective = Perspective
+			perspective-settings {
+				// ueberschreiben aktuelle settings (innerhalb scope)
+				zoom = z
+			}
+		}
+
+		Perspective {
+			flucht = (x, y)
+			rotation = 0
+			unit-pos = (0, 0) 	(relativ zum flucht-punkt ? )
+			unit-size = 1 		(relativ zum flucht-punkt ? )
+			zoom = 1
+		}
+
+		Scene {
+			bgr = Bgr;
+			objs = Obj[];
+			
+			draw = function(panel) {
+				// draw bgr
+				// draw objs
+			}
+		}
+
+		Bgr {
+			flucht = (x, y)
+			unit-pos = y 	(relativ zum flucht-punkt ? )
+			unit-size = x 	(relativ zum flucht-punkt ? )
+
+			img = SceneImage;
+
+			draw = function(perspective) {
+				// TODO draw according to perspective
+			}
+		}
+
+		Obj {
+			sitz = (x, y)
+			unit-size = x 	(relativ zum sitz-punkt)
+
+			welt-pos = (x', y', z')
+			projected-pos = (x, y)
+
+			img = SceneImage;
+
+			project = function(perspective) {
+				// TODO project according to perspective
+				w = 1 + z' * unit-size
+ 				x = (x' - unit-pos.x / unit-size) / w
+ 				y = (y' - unit-pos.y / unit-size) / w
+ 		}
+ 
+ 		draw function(panel) {
+ 			// project(panel.perspective)
+ 			// TODO draw formatted to panel dimensions
+ 		}
+		}
+
+		SceneImage {
+			renderer = Renderer
+		}
+
+		Renderer {
+			draw = function(?) { 
+				return bitmap
+			}
+		}
+
+		Text {
+			content = "bla"
+			renderer = Renderer
+		}

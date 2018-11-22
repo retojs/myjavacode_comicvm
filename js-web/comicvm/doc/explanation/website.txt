@@ -1,0 +1,13 @@
+
+A framework to publish your stories.
+
+We think that comics are a great way to tell a story. 
+ - easy and intuitive to read
+ - easy and low cost to create
+
+We don't host your stories, we just enable you to publish them independently
+
+
+
+
+

@@ -1,0 +1,96 @@
+// Jedes plotItem hat die Elemente eines einfachen Satzes:
+// 
+// 		- Wer (who) 
+// 		- tut was (does/says) 
+// 		- wie (how) 
+// 		- bzgl. wem (with)
+// 
+// Da zudem eine Figur jederzeit mit Attributen (how) qualifiziert werden k�nnen soll, bestehen zus�tzliche Figuren (with) wiederum aus den Keys "who" und "how"... 
+// Der Key "who" kann immer sowohl ein String (eine einzelne Figur) als auch ein Array of Strings sein (mehrere Figuren).
+//
+// Aussagen auf Erz�hlebene werden unter dem Key "told" im plotItem angegeben. Dieser Text wird im endg�ltigen Comic in einem weiss hinterlegten Rahmen angezeigt.
+// Unter dem key "desc" kann man die Handlung mit weiteren Details beschreiben. Dieser Text wird im endg�ltigen Comic nicht angezeigt. die Umsetzung muss vom Zeichner erfolgen.
+
+plot = [
+	{
+	desc: "The sun sets over the ocean",
+	told: "And so this rough day finally came to an end..."
+	}
+	,{
+	who: "Mariel",
+	does: "walks to the beach and sits down tired. She lays her head inside her hands.",
+	with: [{who: "Silvia"}]
+	}
+	,{
+	who: "Mariel",
+	says: "*Sigh*",
+	how: "sad"
+	}
+	,{
+	who: "Silvia",
+	says: "Don't be sad! Everything will be alright. Just wait and see. I know you'll feel better soon.",
+	how: "supportive"
+	}
+	,{
+	who: "Mariel",
+	says: "Who knows...",
+	how: "sad"
+	}
+	,{
+	who: "Silvia",
+	does: "gives Mariel the necklace with the starfish.",
+	with: {who: "Mariel", how: "sad"}
+	}
+	,{
+	who: "Mariel",
+	says: "Thank you",
+	how: "smiling softly",
+	with: {who: "Silvia"}
+	}
+	,{
+	who: ["Wilfried", "Silvia"],
+	says: "You're welcome."
+	}
+	,{
+	desc: "Silvia and Arial turn around at the stranger"
+	}
+	,{
+	who: ["Mariel", "Silvia"],
+	says: "Eeeek!",
+	with: {who: "Wilfried"}
+	}
+	,{
+	who: "Wilfried",
+	says: "Eeeek!"
+	}
+	,{
+	who: "Wilfried",
+	says: "Who the hell are you?!",
+	with: [
+		{who: "Mariel", how: "upset"},
+		{who: "Silvia"}
+		]
+	}
+	,{
+	who: "Silvia",
+	says: "I'm Silvia.",
+	with: {who: "Wilfried"}
+	}
+	,{
+	told: "And so..."
+	}
+	,{
+	who: "Mariel",
+	how: "blushing",
+	says: "And I'm Mariel.",
+	with: {who: "Wilfried"}
+	}
+	, {
+	who: "Wilfried",
+	how: "smiling", 
+	says: "Nice to meet you, Mariel. You can call me Fred."
+	}
+	,{
+	told: "...Mariel met Fred."
+	}
+]

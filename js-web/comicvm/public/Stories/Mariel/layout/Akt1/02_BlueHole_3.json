@@ -1,0 +1,81 @@
+{
+  "panelProperties": [
+    "plotItemCount",
+    "bgrQualifier",
+    "characterQualifier",
+    "characterPosition",
+    "zoom"
+  ],
+  "pages": [
+    [
+      [[1, "blue-hole-10", "all:hide"]],
+      [
+        [
+          3, "", "all:blue-hole-11",
+          {
+            "Mariel": {
+              "y": 0.25,
+              "size": 0.6
+            },
+            "Basil": {"size": 0.8},
+            "Silas": {
+              "y": -0.5,
+              "x": 0.5
+            }
+          }
+        ]
+      ],
+      [
+        [1, "", "all:blue-hole-12"],
+        [2, "east", "all:blue-hole-13"],
+        [1, "", "all:blue-hole-14"]
+      ]
+    ],
+    [
+      [
+        [2, "", "all:blue-hole-15", {"Mariel": {"size": 1.2}}],
+        [
+          1, "", "all:blue-hole-16", {
+          "Mariel": {
+            "size": 1.5,
+            "y": -0.25
+          }
+        }
+        ],
+        [2, "east", "all:blue-hole-17, all:single-image"]
+      ],
+      [
+        [3, "east", "all:blue-hole-18"],
+        [2, "east", "all:blue-hole-19", {}, 1.2],
+        [3, "east", "all:blue-hole-20, all:single-image", {}, 1.2]
+      ],
+      [[1, "blue-hole-21", "all:hide"]]
+    ]
+  ],
+  "backgrounds": {
+    "": {
+      "characterPosition": {
+        "y": 0.8,
+        "Mariel": {
+          "x": -0.5
+        }
+      }
+    },
+    "east": {
+      "characterQualifier": "all:flip",
+      "characterPosition": {
+        "y": 2,
+        "size": 1.25,
+        "Mariel": {
+          "x": -0.5,
+          "y": 0.5
+        }
+      }
+    }
+  },
+  "scene": {
+    "characterPosition": {
+      "size": 1.4
+    }
+  }
+}

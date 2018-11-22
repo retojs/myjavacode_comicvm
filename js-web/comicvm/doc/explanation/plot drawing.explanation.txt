@@ -1,0 +1,57 @@
+In einem ersten Schritt wird ein plot script eingelesen zu einer Liste aus plot items.
+
+zusammen mit einer Layout Datei werden dann jedem Panel eine Anzahl plot items zugeordnet.
+
+Die Klasse Panel übernimmt das Zeichnen des Plot-Item Sets
+
+---
+
+# CharacterPosition:
+
+Character Positionen kannst du auf 2 * 3 Arten angeben: Im Panel, im Hintergrund, oder in der gesamten Szene, und dies jeweils pro Character oder für alle Characters der Szene.
+
+"scene": {
+    "characterPosition": {
+      "size": 1.4
+    }
+  }
+  
+"backgrounds": {
+    "": {
+      "characterPosition": {
+        "y": 0.8,
+		"Papa": {"x": 3}
+      }
+    },
+
+"pages": ...
+	 [ [3, "", 2, "", {"Mariel": {"x": -3}, "Mermaid": {"y": -1}}] ],
+
+Konfigurationen aus Panel, Hintergrund und Szene werden addiert.
+Die Position *pro Character* verschiebt die Figur innerhalb der Gruppe. Die Gruppe selber bleibt aber immer zentriert im Panel.
+Die Position für *alle Characters* verschiebt die gesamte Gruppe innerhalb des Panels.
+
+
+
+
+
+# zoom: vergrössert das Bild.
+
+
+Wenn du den Zoom oder die characterPositions änderst, mag es dich überraschen, dass der Hintergrund nicht mit zoomt bzw. sich verschiebt, sondern fixiert bleibt. Im Bezug auf ihre Umgebung wachsen die Characters also zu Riesen an.
+
+Der Grund dafür ist, dass du die Zeichnung auf den Zoom angepasst machen solltest, um eine konsistente Liniendicke zu haben. Du zoomst also zuerst und zeichnest hinterher.
+Das Hintergrundbild muss primär alle Panels voll ausfüllen können, in denen es verwendet wird. Diese Anforderung bestimmt seine Grösse, unabhängig von den Characters.
+
+
+# pan: schwenkt die Kamera, d.h. die Figuren UND der Hintergrund verschieben sich.
+
+Allerdings ist zu beachten, dass ein Schwenk in einem Panel die Position der Figuren zum Hintergrund in anderen Panels mit demselben Hintergrund beeinflusst, und zwar aus folgendem Grund:
+Die Figuren haben keinen festen Platz im Hintergrund. Die Position ergibt sich durch die Position der Figuren im Panel und durch die Grösse des Hintergrundbildes.
+Denn das Hintergrundbild wird genau so plaziert, dass es alle Panels komplett ausfüllt und die Figuren in jedem Panel am gleichen Platz im Hintergrund bleiben.
+Verschiebt man nun ein Panel mit pan, muss sich ev. auch die Grösse des Hintergrundbildes anpassen, wenn man andernfalls über den Bildrand hinaus schwenken würde.
+Dies verschiebt die Positionen der Figuren in den anderen Panels.
+Was ComicVM sicherstellt ist nur, dass auch bei einem Schwenk (pan) alle Figuren am selben Platz im Hintergrund bleiben und dass das Hintergrundbild alle Panels gerade voll ausfüllt,
+und daraus ergibt sich die Position der Figuren im Hintergrund.
+
+

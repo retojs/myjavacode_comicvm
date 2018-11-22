@@ -1,0 +1,33 @@
+The Comic VM Defaults in Positioning
+
+Die Layout-Logik erfüllt zwei Anforderungen:
+
+    1. Acting Characters sollen gut im Bild sein, d.h. zentriert
+    1.b) dennoch sollen Characters in allen Panels der Szene bzw. eines Hintergrunds positioniert werden können (nicht zentriert)
+    2. Jeder Character soll in allein Panels eines Hintergrundes am selben Platz befinden.
+    2.b) ausser er ist in einzelnen Panels anders positioniert.
+
+Daraus folgt:
+    1. Figuren per Default positionieren
+    2. Individuelle Positionen auf Szene und Hintergrund setzen
+    3. Figuren zentrieren
+     --> Anforderung 1 und 2 erfüllt.
+    4. Allgemeine Positionen der Figuren setzen
+     --> Anforderung 1.b ist erfüllt.
+    5. Panel-Positionen setzen
+     --> Anforderung 2.b ist erfüllt.
+
+
+
+1. Character Default: 
+
+	* Put all in a row, such that gaps are 1 character size.
+	* The absolute character size is equal in each panel of the same background.
+	* It is adjusted such that all active characters fit into the smallest of the panels with 1 character size gap to the borders.
+	* the bounding box of all active characters (with global and individual positions on scene and background applied) is centered in each panel.
+	
+2. Background Defaults:
+
+	* The reference point of a background in a panel is the bounding box of all active characters (i.e. including only background and scene positions)
+	* The size of a background is adjusted to cover all panels sharing this background.
+	

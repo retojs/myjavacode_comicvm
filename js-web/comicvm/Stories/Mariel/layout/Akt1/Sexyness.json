@@ -1,0 +1,19 @@
+{
+  "panelProperties": [
+    "plotItemCount",
+    "bgrQualifier"
+  ],
+  "pages": [
+    [
+      {"hStrips": [0.33, 0.34, 0.33]},
+      [
+        {"wPanels": [0.67, 0.33]},
+        [6, "to-sea"], [1, "to-land"]
+      ],
+      [[3, "to-land"]],
+      [
+        [3, "to-land"], [2, "to-land"], [2, "to-sea"]
+      ]
+    ]
+  ]
+}

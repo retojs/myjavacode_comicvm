@@ -1,0 +1,60 @@
+<div id="image-panel">
+    <span ng-show="!imagesLoaded">loading images {{ imageCount }}/{{ imageList.length }}</span>
+    <span ng-show="imagesLoaded">{{ imageCount }} images loaded</span>
+
+    <button ng-show="imagesLoaded && !showImages" ng-click="toggleImageDisplay()">Show</button>
+    <button ng-show="imagesLoaded && showImages" ng-click="toggleImageDisplay()">Hide</button>
+
+    <div ng-show="showImages"
+         class="image-viewer">
+        <br/>
+        Filter: <input type="text" ng-model="imageFilter" id="image-filter" class="inputLike"/>
+        <br/>
+        <br/>
+
+        <div id="background-images"
+             data-cvm-image-drop-area
+             data-upload-path="/stories/{{ content.story }}/upload/bgr"
+             data-download-path="/stories/{{ content.story }}/images/bgr"
+             data-on-drop="reloadImages">
+
+            <h4>Background Images
+                <span class="drop-area">Drag images here to upload them.</span>
+            </h4>
+
+            <div class="cvm-image-list-item"
+                 ng-repeat="imagePath in getBackgroundImageList() track by imagePath"
+                 ng-show="isVisible(imagePath)">
+                <a ng-href="{{ imagePath }}"
+                   target="_blank">
+                    <img ng-src="{{ imagePath + '?dummy=' + noCacheParam }}"/>
+
+                    <div class="cvm-image-name">{{ getName(imagePath) }}</div>
+                </a>
+            </div>
+        </div>
+
+        <div id="character-images"
+             data-cvm-image-drop-area
+             data-upload-path="/stories/{{ content.story }}/upload/chr"
+             data-download-path="/stories/{{ content.story }}/images/chr"
+             data-on-drop="reloadImages">
+
+            <h4>Character Images
+                <span class="drop-area">Drag images here to upload them.</span>
+            </h4>
+
+
+            <div class="cvm-image-list-item"
+                 ng-repeat="imagePath in getCharacterImageList() track by imagePath"
+                 ng-show="isVisible(imagePath)">
+                <a ng-href="{{ imagePath }}"
+                   target="_blank">
+                    <img ng-src="{{ imagePath + '?dummy=' + noCacheParam }}"/>
+
+                    <div class="cvm-image-name">{{ getName(imagePath) }}</div>
+                </a>
+            </div>
+        </div>
+    </div>
+</div>

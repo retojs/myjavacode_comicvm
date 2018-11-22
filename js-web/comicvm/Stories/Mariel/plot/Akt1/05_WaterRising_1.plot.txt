@@ -1,0 +1,42 @@
+Title: Water Rising
+
+Characters: HerrS, Papa, Mariel, Basil, Silas, Silvia, FrauS
+
+Place: main-beach
+_____
+Plot:
+
+Mariel:
+    Was ist los Papa?
+Papa:
+    Wir müssen weg hier.
+    Das Wasser steigt immer höher.
+
+Mariel sieht, dass der Strand überschwemmt ist.
+
+Papa:
+    Komm, lass uns gehen!
+
+Papa und HerrS und FrauS haben die Kinder geweckt und ziehen weiter landeinwärts.
+
+Silvia:
+    Wieso kommt das Wasser denn plötzlich so weit hoch?
+FrauS:
+    Das wissen wir auch nicht, Liebling.
+HerrS:
+    Es wird eine Springflut sein.
+    Kein Grund zur Sorge.
+Papa:
+    Hmm...
+    Unmöglich.
+    Eine Springflut kann nur bei Vollmond auftreten.
+HerrS:
+    Ach...
+Silvia:
+    Wieso nur bei Vollmond?
+Papa:
+    Weil nur dann Mond, Sonne und Erde in einer Linie stehen.
+    So addieren sich ihre Kräfte, die auf das Wasser wirken.
+Silvia:
+(verwirrt)
+    Ach...

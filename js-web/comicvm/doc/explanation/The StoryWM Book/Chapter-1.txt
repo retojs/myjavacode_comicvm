@@ -1,0 +1,15 @@
+
+
+[Title]
+
+Story WM steht für Story Wizard Machine.
+Die Anlehnung an VM für Virtual Machine ist natürlich nicht zufällig, da die Story VM tatsächlich eine in Maschinen-Code definierte Story ausführt.
+Sie ist jedoch mehr als nur eine Maschine, sondern auch ein Editor, der jede Änderung der Story-Definition instantan ausführt und abbildet.
+
+Eine Story-Definition besteht aus zwei Dateien:
+- der Plot-Datei und
+- der Layout-Datei
+
+[zeigen]
+
+

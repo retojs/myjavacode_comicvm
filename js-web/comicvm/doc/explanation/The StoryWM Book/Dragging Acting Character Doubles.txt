@@ -1,0 +1,70 @@
+
+
+Anzumerken ist:
+
+1. Das Problem
+
+Ich hegte früher auch die Hoffnung, dass sich die richtige Position der bewegten Figur durch eine einfache mathematische Relation aus dem Delta in Pixel des jQuery UI Draggables berechnen lässt.
+Leider funktioniert es nach der einfachen Methode, die für die Positionierung auf Ebene Panel verwendet wird, auf Ebene von Hintergrund oder Szene nicht.
+
+Als Grund dafür vermutete ich zunächst die sequentielle Berechnung der Positionen, die ja im Panel, im Hintergrund oder in der gesamten Szene definiert werden kann.
+Man fängt mit der Default Position an: alle Figuren sind auf einer Reihe in der Mitte des Panels hingesetzt.
+Dann verschiebt oder vergrössert man sie auf Ebene Szene, das heisst die Transformation gilt für alle Panels der Szene.
+Danach addiert bzw. multipliziert man die Transformationen auf Ebene Hintergrund und Panel dazu. (Beim Vergrössern multipliziert man, beim Verschieben addiert man.)
+
+Das Delta beim Verschieben bzw. beim Vergrössern berechnet man mit der endgültigen Position einer Figur, an der sie auf dem Bildschirm erscheint.
+Mit dem berechneten Delta bestimmt man den neuen Positions-Wert.
+Diesen Wert setzt man nun entweder am Ende oder in der Mitte in die sequentielle Berechnung ein.
+Welchen Einfluss haben nun die sequentiell nachfolgenden Transformationen darauf, wie diese Berechnung korrekt durchgeführt wird?
+
+-> Dieses Problem kann man auch bei CSS-Transformationen beobachten: scale und translate beeinflussen sich gegenseitig. Ändert man die Reihenfolge der Transformationen, Ändert sich das Endresultat.
+
+Das Vergössern war kein Problem. Egal ob man eine size-Angabe auf Ebene Panel oder auf Ebene Hintergrund setzt berechnet die WM aus dem Delta die richtige Position.
+Beim Verschieben liefen jedoch das Element unter dem Mauszeiger und das Element an der berechneten neuen Position auseinander. Das heisst, die Berechnung aus dem Delta war offenbar falsch.
+
+Ein einfacher Test sollte mir Hinweise geben, ob die nachfolgende Positions-Transformation im Panel die Berechnung verfälscht.
+Wäre sie Schuld am Phänomen, müsste sich das Phänomen verändern, wenn sich die Transformation auf Ebene Panel verändert.
+
+[Test zeigen]
+
+Offenbar war also die sequentiell nachfolgende Transformation auf Ebene Panel nicht die Ursache für das falsche Ergebnis der Berechnung.
+Das Problem war natürlich das Zentrieren der acting Characters:
+
+Die Positions-Angaben auf Ebene Hintergrund (und Szene) gelten relativ zur Default Position.
+Danach wird die Bounding Box aller Figuren im Panel zentriert.
+Das heisst, in der Berechnung wird eine Translation inzuaddiert, die auf nicht-triviale Weise abhängig ist von der Position jeder einzelnen Figur.
+Das heisst, die Berechnung wird komplex, was wiederum bedeutet, dass wir uns was einfallen lassen müssen...
+
+
+2. Die Lösung:
+
+Ich habe verschiedene Ansätze probiert.
+Zuerst wollte ich aus dem Delta der eigentlichen und der falsch berechneten Position einen Korrekturfaktor berechnen und den Fehler so rückgängig machen.
+Das funktionierte nicht.
+Die Veränderung des Delta zwischen der eigentlichen und der berechneten Position wird in dieser (scheinbaren) Lösung als stetig angenommen.
+Tatsächlich verändert sich die eigentliche Position jedoch unstetig in Relation zu einer stetigen Bewegung einer einzelnen Figur.
+Das liegt daran, dass auf die Grösse und Position der Bounding Box jede Figur einen Einfluss hat.
+
+Also verwarf ich diesen Ansatz und war wieder auf Feld eins.
+Ob es überhaupt möglich war, die Position korrekt zu berechnen?
+Natürlich war es möglich. Letztlich sind alle Verschiebungen und Vergrösserung einfache Vektoradditionen und -multiplikationen.
+Das Problem ist nur, das richtige Modell zu finden.
+
+Um das richtige Modell zu finden, muss man die geeigneten Invarianten finden.
+Invarianten sind diejenigen Bedingungen, die unverändert bleiben.
+Aus ihnen ergibt sich das Berechnungsmodell und der Algorithmus.
+
+Mein neuer Ansatz ging von folgenden Invarianten aus:
+Invariante 1: Die Bounding Box aller Figuren entspricht der Bounding Box aus Figur A und der Bounding Box aller restlichen Figuren ausser A.
+Invariante 2: Die Bounding Box ist innerhalb des Panels zentriert, jedoch um globale ("all") Positions-Angaben verschoben bzw. vergrössert.
+
+Wenn ich also eine Figur A verschiebe, muss sich die Bounding Box in die gegenüberliegende Ecke des Panels verschieben, um beide Invarianten zu erfüllen.
+Das Delta berechnet sich aus der Distanz der Figur A zur Bounding Box der restlichen Figuren. Denn auf Ebene Hintergrund (und Szene) sind individuelle Positions-Angaben bloss relativ zu den restlichen Figuren.
+
+
+Verschiebe ich also
+
+
+
+ Um das Verhalten zu analysieren zog ich Figuren
+Und zwar zeigte sich, dass die Unstetigkeit der Position der Bounding Box

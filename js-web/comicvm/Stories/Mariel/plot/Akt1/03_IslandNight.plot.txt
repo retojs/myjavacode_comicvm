@@ -1,0 +1,54 @@
+Title: Blue Hole
+
+Characters:  HerrS, Papa, Mariel, Basil, Silas, Silvia, FrauS
+
+Place: night-beach
+_____
+Plot:
+
+Es ist Nacht.
+Mariel sitzt mit Papa, HerrS, FrauS und den Seehunden am Strand unter dem Sternenhimmel.
+
+STORYTELLER:
+    am Abend am Strand...
+
+Mariel:
+    Ich hab eine Meerjungfrau gesehen heute im Blue Hole.
+Silas:
+    Und ich schwimm heute Nacht zum Mond.
+    Kommst du mit?
+Mariel:
+    Nein wirklich!
+Silas:
+    Pfff! Meerjungfrauen gibt es nicht.
+Silvia zu Silas:
+    Woher willst du das wissen? Nur weil du noch nie eine gesehen hast?
+    Das beweist nicht, dass es keine gibt!
+Silas:
+    Aber noch weniger beweist es, DASS es welche gibt.
+    Und es gibt keine Meerjungfrauen.
+    Oder seh ich das falsch, Paps?
+HerrS:
+    Also mir ist jedenfalls auch noch nie eine begegnet...
+Mariel:
+(trotzig)
+    Mir schon.
+    Und sie war wunderschön...
+Silas:
+    Ja ja, träum weiter.
+    Ich schlaf jetzt.
+FrauS:
+    Ich glaube, es ist nun für alle Schlafenszeit.
+Mariel:
+    Gute Nacht!
+Silvia:
+    Gute Nacht!
+FrauS:
+    Schlaft gut!
+Papa zu Mariel:
+    Du wirst schon wissen, was du gesehen hast, Liebes.
+    Schlaf gut!
+Mariel:
+    Schlaf gut, Papa!
+
+Papa geht Richtung Strand und schaut die Sterne an

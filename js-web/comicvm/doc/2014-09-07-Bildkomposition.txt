@@ -1,0 +1,12 @@
+Object Scene:
+
+- Liefert Characters als Liste "in order of appearence" für jedes subset von characters (min max character)
+- Liefert grösstes und kleinstes Panel
+- Liefert Hintergründe mit Grösse und Position der Figuren (Herleitung aus kleinstem und grösstem Panel
+
+
+Object Panel Refactoring:
+
+- Liefert Grösse und Positionen einer beliebigen Liste von Charakteren
+- Liefert Grösse und Position für einen Hintergrund
+

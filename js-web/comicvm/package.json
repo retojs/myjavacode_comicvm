@@ -1,0 +1,37 @@
+{
+  "name": "comicvm",
+  "version": "1.0.0",
+  "description": "A Default Comic Format",
+  "main": "run.js",
+  "directories": {
+    "doc": "doc",
+    "test": "test"
+  },
+  "dependencies": {
+    "angular-mocks": "1.5.2",
+    "angular-ui-bootstrap": "^2.5.6",
+    "body-parser": "1.14.2",
+    "bower": "1.8.2",
+    "debug": "2.2.0",
+    "del": "2.2.0",
+    "express": "4.12.4",
+    "gulp": "3.9.1",
+    "gulp-clean": "0.3.2",
+    "gulp-rename": "1.2.2",
+    "jasmine": "2.3.1",
+    "multer": "1.1.0"
+  },
+  "devDependencies": {
+    "live-server": "^1.2.0",
+    "protractor": "^5.1.2"
+  },
+  "scripts": {
+    "start": "start npm run start-backend && npm run start-liveserver",
+    "start-backend": "node run.js",
+    "start-server": "live-server app",
+    "e2e-setup": "npm install && node node_modules/protractor/bin/webdriver-manager update",
+    "e2e-run": "node node_modules/protractor/bin/webdriver-manager start"
+  },
+  "author": "Reto Lamprecht",
+  "license": "ISC"
+}

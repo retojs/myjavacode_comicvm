@@ -1,0 +1,24 @@
+Der Algorithmus ist einfach:
+
+0. Datei lesen nach string.
+
+1. Split string nach Zeilen.
+
+2. Für jede Zeile: 
+
+	2.a collectStoryItems = keyword "Plot:" erreicht? 
+
+	2.b falls collectStoryItems:
+
+			Beginnt Zeile mit
+
+				@x: neuer Story Item für character x
+
+					gefolgt von ':': Says-Item
+
+					sonst: Does-Item. 
+
+				tab: neuer Story Item zum aktuellen character
+
+				sonst: neuer Beschreibung-Item
+

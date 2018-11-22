@@ -1,0 +1,40 @@
+Title: Water Rising
+
+Characters: Papa, Mariel
+
+Place: main-beach
+_____
+Plot:
+
+Die Seehunde legen sich weiter landeinwärts zum schlafen nieder.
+Mariel stehen Tränen in den Augen.
+
+Papa:
+    Alles in Ordnung, Liebes?
+Mariel:
+(weinend)
+    Glaub nicht...
+    Ich bin irgendwie so traurig.
+Papa:
+    Aber wieso denn?
+Mariel:
+    Ich weiss auch nicht...
+    Aber glaubst du wir gehören wirklich auf diese Insel?
+Papa:
+    Es ist nicht unsere ursprüngliche Heimat,
+    aber es ist doch ein kleines Paradies!
+    Findest du nicht?
+Mariel:
+    Doch schon.
+    Ich weiss auch nicht...
+Papa:
+    Lass uns weiterschlafen!
+    Morgen sieht alles schon wieder ganz anders aus.
+Mariel:
+(lächelt)
+    Stimmt.
+    Ich hab nur schlecht geträumt.
+
+Mariel wischt sich die Tränen ab und legt sich wieder schlafen.
+
+

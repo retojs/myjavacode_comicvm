@@ -1,0 +1,27 @@
+Precondition:
+
+	Plot Items sind auf Panel verteilt
+	-> Panel enthält Characters und ihre Aktionen 
+	
+Algorithmus:
+
+	for each bgr in scene:
+		
+		1. finde grösstes panel
+		bestimme grösse und position für bgr
+		apply to all panels with same bgr
+		
+		falls qualifiers (skalierung, translation, spiegelung etc.):
+			anwenden
+			TODO: relativ zu was??
+			
+		2. finde kleinstes panel
+		bestimme grösse und position für figuren
+		apply to all panels with same bgr
+		
+		falls qualifiers:
+			anwenden
+			TODO: relativ zu was??
+			bgr anpassen, wo defaults (explizite qualifier werden nicht überschrieben)
+			
+			

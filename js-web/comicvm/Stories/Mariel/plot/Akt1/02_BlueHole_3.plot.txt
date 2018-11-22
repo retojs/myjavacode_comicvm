@@ -1,0 +1,55 @@
+Title: Blue Hole
+
+Characters: Mariel, Basil, Silas
+
+Place: open-sea
+_____
+Plot:
+
+Basil und Silas tauchen mit Mariel zusammen auf.
+
+Mariel:
+    Wow!
+Basil:
+    Wahnsinn!
+Silas:
+    Kraass!
+Mariel:
+    Oh Mann, ich dachte ich sterbe!
+Basil zu Mariel:
+(frowning)
+    Ähm, Mariel...
+Silas:
+(pointing)
+    Du hast da was...
+Mariel:
+    Hä?
+    Ein Seestern!
+    Cool, den behalte ich als Souvenir.
+
+Mariel kriegt vom Seestern Wasser ins Gesicht gespuckt.
+
+Basil lacht über Mariel:
+    Ha ha!
+Silas:
+    Ha ha!
+
+Basil zu Mariel:
+    Hiermit taufen wir dich auf den Namen
+    "Blue Hole Splasher"
+Silas:
+    Ha ha!
+
+Mariel:
+    Hey, ich hab ne Meerjungfrau gesehen da unten!
+Basil:
+    Was du nicht sagst.
+    Komm, lass uns zurück schwimmen.
+    Du zitterst ja schon vor Kälte.
+Mariel:
+    Ok
+
+Basil, Silas schwimmen mit Mariel zurück zum Strand.
+
+Silas:
+    Yeee-ha!

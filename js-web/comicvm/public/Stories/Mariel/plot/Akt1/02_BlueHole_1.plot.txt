@@ -1,0 +1,61 @@
+Title: Blue Hole
+
+Characters: Mariel, Basil, Silas
+
+Place: open-sea
+_____
+Plot:
+
+STORYTELLER:
+    Draussen im Riff...
+
+Basil, Silas und Mariel tauchen durch das Riff.
+Mariel hat kaum noch Luft.
+Basil bemerkt es und taucht auf.
+Mariel keucht.
+
+Mariel:
+    Es geht nicht!
+    Ich kann meinen Atem nicht so lange anhalten.
+Basil:
+    Ganz ruhig, Kleine...
+Silas:
+    Immer schön tief durchatmen.
+Basil zu Mariel:
+    Jetzt atmest du ein paar Mal ganz tief aus, klar?
+Basil zu Mariel:
+(Mariel: atmet)
+    Sehr gut... genau so...
+    Das senkt den CO2-Spiegel im Blut und unterdrückt den Atemreflex.
+
+Mariel zu Basil:
+    Mir ist vorhin fast schwarz geworden vor Augen...
+Silas:
+    Das Schwarze war bloss der Grund des Blue Holes.
+    Haha!
+Basil zu Mariel:
+    Und den wolltest du doch sehen, oder?
+Mariel zu Basil:
+    Ja schon, aber denkt ihr nicht, dass es ziemlich gefährlich ist?
+Basil zu Mariel:
+    Ja schon...
+Silas:
+    Ach was...
+
+Basil zu Mariel:
+    No risk, no fun!
+Silas:
+    Wir werden schon auf dich aufpassen.
+Silas zu Mariel:
+    Du wirst sehen, das wird kraass.
+
+Basil:
+    Wieder startklar?
+Mariel:
+    Mhm
+Basil:
+    Los geht's!
+Silas:
+    gröl!
+Mariel:
+    Schluck

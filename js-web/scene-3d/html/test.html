@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>ComicVM Test</title>
+		<style type="text/css">
+			body {
+				font-family: Arial;
+				font-size: 0.8em;
+			}
+
+			#canvas {
+				float: left;		
+			}
+			#offScreen {
+				display: none;
+			}
+			img {
+				display: none;
+			}
+
+			#parameters {
+				float: right;
+			}
+			#parameters-debug {
+				float: right;		
+				margin: 4px;	
+			}
+			#parameters-obj {
+				float: right;		
+				margin: 4px;	
+			}
+			#parameters-perspective {
+				float: right;		
+				margin: 4px;	
+			}			
+			#redraw {
+				clear: both;	
+				float: right;		
+			}
+			input[type="text"] {
+				width: 50px;
+			}			
+			
+		</style>
+	</head>
+	<body>
+	
+		<div id="canvas">
+			<canvas id="myCanvas" width="600" height="400"></canvas>
+			<canvas id="offScreen" width="600" height="400"></canvas>
+		</div>
+		
+		<div id="parameters">
+			<div id="parameters-debug">
+				<input type="checkbox" id="DEBUG_PANEL"/>
+					DEBUG_PANEL
+					<br/>
+				<input type="checkbox" id="DEBUG_HORIZON"/>
+					DEBUG_HORIZON
+					<br/>
+				<input type="checkbox" id="DEBUG_PERSPECTIVE"/>
+					DEBUG_PERSPECTIVE
+					<br/>
+				<input type="checkbox" id="DEBUG_OBJ_UNIT"/>
+					DEBUG_OBJ_UNIT
+					<br/>
+				<input type="checkbox" id="DEBUG_IMAGE"/>
+					DEBUG_IMAGE
+					<br/>
+			</div>
+			
+			<div id="parameters-obj">	
+				<input type="text" id="TEST_OBJ_IMG_SIZE"/>
+					OBJ_IMG_SIZE
+					<br/>
+				<input type="text" id="TEST_OBJ_SIT_X"/>
+					OBJ_SIT_X
+					<br/>
+				<input type="text" id="TEST_OBJ_SIT_Y"/>
+					OBJ_SIT_Y
+					<br/>
+					<br/>
+				
+				<input type="text" id="TEST_OBJ_X"/>
+					OBJ_X
+					<br/>
+				<input type="text" id="TEST_OBJ_Y"/>
+					OBJ_Y
+					<br/>
+				<input type="text" id="TEST_OBJ_Z"/>
+					OBJ_Z
+					<br/>
+			</div>
+			
+			<div id="parameters-perspective">				
+				<input type="text" id="TEST_BGR_FLUCHT_X"/>
+					BGR_FLUCHT_X
+					<br/>
+				<input type="text" id="TEST_BGR_FLUCHT_Y"/>
+					BGR_FLUCHT_Y
+					<br/>
+					<br/>
+				
+				<input type="text" id="TEST_PANEL_FLUCHT_X"/>
+					PANEL_FLUCHT_X
+					<br/>
+				<input type="text" id="TEST_PANEL_FLUCHT_Y"/>
+					PANEL_FLUCHT_Y
+					<br/>
+					<br/>
+				
+				<input type="text" id="TEST_BGR_UNIT_SIZE"/>
+					BGR_UNIT_SIZE
+					<br/>
+				<input type="text" id="TEST_BGR_UNIT_Y"/>
+					BGR_UNIT_Y
+					<br/>
+					<br/>
+				
+				<input type="text" id="TEST_PANEL_UNIT_SIZE"/>
+					PANEL_UNIT_SIZE
+					<br/>
+				<input type="text" id="TEST_PANEL_UNIT_X"/>
+					PANEL_UNIT_X
+					<br/>			
+			</div>
+		
+			<div id="redraw">	
+				<button>Re-Draw</button>
+			</div>
+		</div>
+
+		<img id="meerkat" src="../images/meerkat.png"/>
+		<img id="karoo" src="../images/karoo.jpg"/>
+		
+		<script type="text/javascript" src="../js/jquery/jquery-1.9.1.js"></script>
+
+		<script type="text/javascript" src="../js/Point2D.js"></script>
+		<script type="text/javascript" src="../js/Point3D.js"></script>
+		<script type="text/javascript" src="../js/Rectangle.js"></script>
+		<script type="text/javascript" src="../js/CanvasUtil.js"></script>
+		<script type="text/javascript" src="../js/ComicVM_BasicTypes.js"></script>
+		<script type="text/javascript" src="../js/ComicVM_SceneTypes.js"></script>
+		<script type="text/javascript" src="../js/ComicVM.js"></script>
+		<script type="text/javascript" src="../js/Example.js"></script>
+		<script type="text/javascript" src="../js/ExampleConfig.js"></script>
+				
+	</body>
+</html>
+		

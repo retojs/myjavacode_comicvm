@@ -1,0 +1,28 @@
+Comic VM wurde mit dem Ziel entwickelt, die einfachst mögliche Text-Repräsentation für einen Comic zu finden.
+
+Jede Notation lässt sich durch Default-Werte vereinfachen.
+Mit Default-Werten soll also bereits ein möglichst gut lesbarer Comic gezeichnet werden können.
+
+Diese Anforderung führte zur gewählten Notation.
+Im folgenden werde ich die Überlegungen zu einzelnen Aspekten der Comic-VM-Notation erläutern.
+
+## 1. plotItemCount
+
+Die Zuordnung von PlotItem auf die einzelnen Panels soll möglichst einfach und flexibel sein.
+Verschiedene Implementations-Möglichkeiten sind denkbar.
+Was nicht in Frage kommt sind individuelle Referenzen.
+(Wieso?)
+
+Wir zählen sie einfach pro Panel ab mit plotItemCount.
+So bleibt die einerseits die Reihenfolge immer lückenlos erhalten und andererseits lassen sich plot items mit nur einer Textänderung von einem Panel ins benachbarte verschieben.
+
+
+## 2. bgrQualifier
+
+Als Hintergrundbild wird die Bitmap im TagStore ausgewählt, die am besten zu den Tags des Hintergrunds passt.
+Die Qualifier-Tags eines Hintergrunds sind:
+
+- Das 'place' Property der Szene
+- Die Layout Properties 'bgrQualifier', die für die ganze Szene, einen Hintergrund oder ein Panel gesetzt werden können.
+
+

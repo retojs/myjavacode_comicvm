@@ -1,0 +1,12 @@
+Die ComicVM generiert Druckvorlagen, mit "variablen" Bereichen (in einer hellen Farbe z.B. gelb), die man sich ausdrucken kann, um sie mit Zeichnungen zu füllen.
+Es genügt dann, die Eckpunkte der Seite innerhalb des Scans (in pixel) anzugeben,
+um sämtliche manuell gezeichneten Bereiche den variablen Bereichen zuordnen zu können.
+Da die Variablen Bereiche in der Quell-Datei (.plot.txt) jeweils mit einem (optionalen) Stichwort bezeichnet sind,
+können die Zeichnungen auf den Rest des Plots extrapoliert werden, 
+das heisst: überall da, wo ein variabler Bereich mit Stichwort S bezeichnet ist, wird die zuletzt gescannte Zeichnung angezeigt. 
+Da wo kein Stichwort oder keine zum Stichwort passende Zeichnung vorhanden ist, wird die als erstes gescannte Zeichnung angezeigt.
+
+Die angezeigten Druckvorlagen können nun wiederum als "variable" Bereiche ausgedruckt werden, die man sich ausdrucken kann, um sie mit Zeichnungen zu füllen.
+So kann man den Character verfeinern und an verschiedene Perspektiven und Situationen anpassen,
+und die verfeinerten Zeichnungen wiederum auf den Rest des Comics extrapolieren.
+

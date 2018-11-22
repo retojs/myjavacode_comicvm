@@ -1,0 +1,43 @@
+Test Suites
+
+
+parser:
+
+	plot parser
+	
+layout:
+
+	scene layout
+		calculate chr size and bgr size
+	
+	panel layout
+		calculate character positions
+		determine bgr positions.
+		
+		* mental note: 
+			Q: Warum sind die Positions-Angaben der Figuren auf Ebene der Szene bzw. des Hintergrunds nur relativ zueinander, nicht relativ zum Hintergrund?
+
+			A: eigentlich sollten sie beides sein... der Referenzpunkt für die Positionierung des Hintergrunds muss der Nullpunkt des Koordinaten-systems der Figuren sein.
+			   Dieser Nullpunkt ist die bounding box der characters im default-Zustand (ohne Positions-Angaben)
+			   
+			?: Ist dies bereits so implementiert?
+				--> testen!  
+			
+painter:
+
+	- characters
+	- background
+	- text
+	- metadata
+	
+editor:
+
+	editor tool
+	editor elements
+	drag-resize
+	
+player:
+
+	TBD
+	
+	

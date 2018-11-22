@@ -1,0 +1,53 @@
+{
+	"_comment": [
+			"This file specifies for each panel in a strip in a page:",
+
+			" * plotItemCount: the number of plot items",
+			" * bgrQualifier: background image qualifiers",
+
+			"The panel may be represented by a single plotItemCount value, or multiple values as specified in panelProperties.",
+
+			"You can specify options for pages and strips in an additional first object element in the array of strips or panels,",
+			"like {\"wPanels\": [0.4, 0.6]} below.",
+
+			"For pages the available options are:",
+			" * hStrips: an array of strip heights between 0 (no height) and 1 (page height)",
+
+			"For strips the available options are:",
+			" * wPanels: an array of panel widths between 0 (no width) and 1 (page width)"
+		],
+	
+	"panelProperties": [
+		"plotItemCount", 
+		"bgrQualifier"
+	],
+	
+	"pages":
+	[
+		[	{"hStrips": [0.33, 0.34, 0.33]},
+
+			[	{"wPanels": [0.67, 0.33]},
+
+				[5, "to-sea"], [1, "to-land"]
+			],
+			[ [2, "to-land"] ],
+			[
+				[3, "to-land"], [2, "to-land"], [2, "to-sea"]
+			]
+		]
+	],
+
+  "backgrounds": {
+	"to-sea": {
+	  "reverse": true,
+	  "characters": {
+		"y": 0.6
+	  }
+	},
+	"to-land": {
+	  "characters": {
+		"y": 0.7
+	  }
+	}
+  }
+}

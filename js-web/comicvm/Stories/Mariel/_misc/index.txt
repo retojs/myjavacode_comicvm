@@ -1,0 +1,26 @@
+ Mariel, das Meerjungschweinchen
+
+ Eine Geschichte über den Sinn des Lebens, des Universums und allem.
+ Nicht nur eine Neu-Interpretation der "Kleinen Meerjungfrau" von Hans Christian Andersen, sondern Aufklärung über den Sinn des Lebens, Evolution und den Klimawandel.
+
+ Ariel ist ein Meerschweinchen / Erdhörnchen (Meercat) und lebt mit ihrem Vater auf einem Atoll mit einer Seehundfamilie unter vielen anderen Seehunden.
+
+
+Akt1/..
+Akt1/..
+Akt1/..
+
+Akt2/..
+Akt2/..
+Akt2/..
+
+Akt3/..
+Akt3/..
+Akt3/..
+
+
+ Idee:
+ 
+  ComicVM interpretiert alle Zeilen in index.txt, die *nicht* mit Whitespace beginnen, als Pfade zu den Szenen deiner Story.
+  ComicVM zeichnet diese Szenen aus ihren Plot- und Layout-Dateien, die sich in den Verzeichnissen "plot" und "layout" befinden.
+  Die oben erwähnten Pfade sind jeweils relativ zu diesen Verzeichnissen, also z.B. plot/Akt1/ und layout/Akt1/ 
