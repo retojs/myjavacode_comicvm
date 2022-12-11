@@ -41,30 +41,30 @@ angular.module('main')
         }
 
         function getSceneListURL(story) {
-            return replaceStory(story, URL.sceneList);
+            return replaceStory(story, getBaseUrl() + URL.sceneList);
         }
 
         function getImageListURL(story) {
-            return replaceStory(story, URL.imageList);
+            return replaceStory(story, getBaseUrl() + URL.imageList);
         }
 
         function getPlotURL(story, scene) {
             return replaceStory(story,
-                replaceScene(scene, URL.plot)
+                replaceScene(scene, getBaseUrl() + URL.plot)
             );
         }
 
         function getLayoutURL(story, scene) {
             return replaceStory(story,
-                replaceScene(scene, URL.layout)
+                replaceScene(scene, getBaseUrl() + URL.layout)
             );
         }
 
         function getImageURL(story, imageType, imageName) {
-            return replaceStory(story, URL.image).replace(':imageType', imageType).replace(':name', imageName);
+            return replaceStory(story, getBaseUrl() + URL.image).replace(':imageType', imageType).replace(':name', imageName);
         }
 
         function getMoveTempImageURL(story, imageName) {
-            return replaceStory(story, URL.moveTempImage).replace(':name', imageName);
+            return replaceStory(story, getBaseUrl() + URL.moveTempImage).replace(':name', imageName);
         }
     });

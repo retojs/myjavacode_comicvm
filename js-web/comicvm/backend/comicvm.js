@@ -1,6 +1,6 @@
 'use strict';
-
 var express = require('express'),
+    cors = require('cors'),
     path = require('path'),
     fs = require('fs'),
     bodyParser = require('body-parser'),
@@ -15,11 +15,15 @@ var express = require('express'),
 comicvm.use(express.static('app'));
 
 comicvm.use(bodyParser.json());
-comicvm.use(bodyParser.urlencoded({
-    extended: true
-}));
+comicvm.use(bodyParser.urlencoded({extended: true}));
 
-comicvm.get('/stories/:story/list/scenes', function (req, res) {
+
+var corsOptions = {
+    origin: '*',
+    optionsSuccessStatus: 200 // some legacy browsers (IE11, various SmartTVs) choke on 204
+}
+
+comicvm.get('/stories/:story/list/scenes', cors(corsOptions), function (req, res) {
     var plotPath = '/' + req.params.story + '/plot';
     fileurls.getUrls(STORIES_DIR + plotPath, '', null, function (paths) {
         console.log('scenes:\n ' + paths);
@@ -28,7 +32,7 @@ comicvm.get('/stories/:story/list/scenes', function (req, res) {
     });
 });
 
-comicvm.get('/stories/:story/list/images', function (req, res) {
+comicvm.get('/stories/:story/list/images', cors(corsOptions), function (req, res) {
     var imagesPath = '/' + req.params.story + '/images';
     fileurls.getUrls(STORIES_DIR + imagesPath, 'stories' + imagesPath, ['bgr', 'chr'], function (paths) {
         console.log('images:\n ' + paths);
@@ -49,11 +53,11 @@ var storage = multer.diskStorage({
     upload = multer({storage: storage});
 
 // 'image' is the property in the uploaded form data the image data is assigned to
-comicvm.post('/stories/:story/upload/:path', upload.single('image'), function (req, res) {
+comicvm.post('/stories/:story/upload/:path', upload.single('image'), cors(corsOptions), function (req, res) {
     res.end();
 });
 
-comicvm.post('/stories/:story/images/move/tmp/:path', function (req, res) {
+comicvm.post('/stories/:story/images/move/tmp/:path', cors(corsOptions), function (req, res) {
     var tmpPath = '/stories/' + req.params.story + '/images/tmp/' + req.params.path;
     var localPath = {
         from: toLocalPath(tmpPath, 'stories', STORIES_DIR),
@@ -71,13 +75,13 @@ comicvm.post('/stories/:story/images/move/tmp/:path', function (req, res) {
  * the stories are not inside the app directory
  *  -> return the requested file from a different local directory
  */
-comicvm.get(/^\/stories/, function (req, res) {
+comicvm.get(/^\/stories/, cors(corsOptions), function (req, res) {
     console.log('GET : ' + req.originalUrl);
     var localPath = toLocalPath(req.originalUrl, 'stories', STORIES_DIR);
     res.sendFile(localPath);
 });
 
-comicvm.post(/^\/stories/, function (req, res) {
+comicvm.post(/^\/stories/, cors(corsOptions), function (req, res) {
     console.log('POST : ' + req.originalUrl);
     var localPath = toLocalPath(req.originalUrl, 'stories', STORIES_DIR);
     fs.writeFile(localPath, req.body.content, function () {
@@ -89,7 +93,7 @@ comicvm.post(/^\/stories/, function (req, res) {
 /**
  * the jasmine spec runner is served under the url /jasmine
  */
-comicvm.get(/^\/jasmine/, function (req, res) {
+comicvm.get(/^\/jasmine/, cors(corsOptions), function (req, res) {
     if (req.originalUrl === '/jasmine') {
         res.sendFile(path.join(__dirname + '/../test/unit-tests/jasmine-standalone-2.3.4/SpecRunner.html'))
 

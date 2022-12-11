@@ -1,5 +1,5 @@
-var gulp = require('gulp');
-var del = require('del');
+const gulp = require('gulp');
+const del = require('del');
 
 // TODO: separate images from app, copy into app in a gulp task
 
@@ -25,78 +25,123 @@ var del = require('del');
  *
  */
 
-gulp.task('clean', function () {
+function clean() {
     return del(['public/**/*']);
-});
+}
 
+exports.clean = clean;
 
-gulp.task('clean:app', function () {
+function cleanApp() {
     return del('public/app/**/*');
-});
-gulp.task('app', ['clean:app'], function () {
+}
+
+exports.cleanApp = cleanApp;
+
+function copyApp() {
     return gulp.src('app/**/*')
         .pipe(gulp.dest('public/app'));
-});
-gulp.task('clean:app-script', function () {
+}
+
+const app = gulp.series(cleanApp, copyApp);
+exports.app = app;
+
+function cleanAppScript() {
     return del('public/app/script/**/*');
-});
-gulp.task('app-script', ['clean:app-script'], function () {
+}
+
+exports.cleanAppScript = cleanAppScript;
+
+function copyAppScript() {
     return gulp.src('app/script/**/*')
         .pipe(gulp.dest('public/app/script'));
-});
-gulp.task('clean:app-css', function () {
+}
+
+const appScript = gulp.series(cleanAppScript, copyAppScript);
+exports.appScript = appScript;
+
+function cleanAppCss() {
     return del('public/app/css/**/*');
-});
-gulp.task('app-css', ['clean:app-css'], function () {
+}
+
+exports.cleanAppCss = cleanAppCss;
+
+function copyAppCss() {
     return gulp.src('app/css/**/*')
         .pipe(gulp.dest('public/app/css'));
-});
+}
 
+const appCss = gulp.series(cleanAppCss, copyAppCss);
+exports.appCss = appCss;
 
-gulp.task('clean:backend', function () {
+function cleanBackend() {
     return del('public/backend/**/*');
-});
-gulp.task('backend', ['clean:backend'], function () {
+}
+
+exports.cleanBackend = cleanBackend;
+
+function copyBackend() {
     return gulp.src('backend/**')
         .pipe(gulp.dest('public/backend'));
-});
-gulp.task('clean:run', function () {
+}
+
+const backend = gulp.series(cleanBackend, copyBackend);
+exports.backend = backend;
+
+function cleanRun() {
     return del('public/run.js');
-});
-gulp.task('run', ['clean:run'], function () {
+}
+
+exports.cleanRun = cleanRun;
+
+function copyRun() {
     return gulp.src('run.js')
         .pipe(gulp.dest('public'));
-});
+}
 
+const run = gulp.series(cleanRun, copyRun);
+exports.run = run;
 
-gulp.task('clean:stories', function () {
+function cleanStories() {
     return del('public/Stories/**/*');
-});
-gulp.task('stories', ['clean:stories'], function () {
+}
+
+exports.cleanStories = cleanStories;
+
+function copyStories() {
     return gulp.src('Stories/**/*')
         .pipe(gulp.dest('public/Stories'));
-});
+}
 
+const stories = gulp.series(cleanStories, copyStories);
+exports.stories = stories;
 
-gulp.task('clean:cf', function () {
-    return del(['manifest.yml', 'package.json']);
-});
-gulp.task('cf', ['clean:cf'], function () {
+function cleanCF() {
+    // return del(['manifest.yml', 'package.json']);
+}
+
+exports.cleanCF = cleanCF;
+
+function copyCF() {
     return gulp.src('cf/**/*')
         .pipe(gulp.dest('public/'));
-});
+}
 
+function cleanDependencies() {
+    return del('public/node_modules/**/*');
+}
+exports.cleanDependencies = cleanDependencies;
 
-gulp.task('deploy:all', ['app', 'backend', 'stories', 'cf']);
-gulp.task('deploy:app', ['app-script', 'app-css']);
-gulp.task('deploy:backend', ['backend', 'run']);
-gulp.task('deploy:cf', ['cf']);
+const cf = gulp.series(cleanCF, copyCF);
+exports.cf = cf;
 
-gulp.task('build', ['deploy:app', 'deploy:backend', 'deploy:cf']);
+const deployAll = gulp.series(app, backend, stories, cf);
+const deployApp = gulp.series(appScript, appCss);
+const deployBackend = gulp.series(backend, run);
 
+const build = gulp.series(deployApp, deployBackend, cf);
 
-/**
- * E2E Tests with Protractor
- *
- * @see: http://www.kramnameloc.com/getting-started-with-protractor
- */
+exports.deployAll = deployAll;
+exports.deployApp = deployApp;
+exports.deployBackend = deployBackend;
+
+exports.build = build;

@@ -1,5 +1,5 @@
 {
-  "name": "comicVM",
+  "name": "comicvm",
   "version": "0.0.0",
   "description": "renders a comic",
   "main": "index.html",

@@ -25,9 +25,9 @@
             <div class="cvm-image-list-item"
                  ng-repeat="imagePath in getBackgroundImageList() track by imagePath"
                  ng-show="isVisible(imagePath)">
-                <a ng-href="{{ imagePath }}"
+                <a ng-href="{{ 'http://localhost:3000/' + imagePath }}"
                    target="_blank">
-                    <img ng-src="{{ imagePath + '?dummy=' + noCacheParam }}"/>
+                    <img ng-src="{{ 'http://localhost:3000/' + imagePath + '?dummy=' + noCacheParam }}"/>
 
                     <div class="cvm-image-name">{{ getName(imagePath) }}</div>
                 </a>
@@ -48,9 +48,9 @@
             <div class="cvm-image-list-item"
                  ng-repeat="imagePath in getCharacterImageList() track by imagePath"
                  ng-show="isVisible(imagePath)">
-                <a ng-href="{{ imagePath }}"
+                <a ng-href="{{'http://localhost:3000/' + imagePath }}"
                    target="_blank">
-                    <img ng-src="{{ imagePath + '?dummy=' + noCacheParam }}"/>
+                    <img ng-src="{{ 'http://localhost:3000/' + imagePath + '?dummy=' + noCacheParam }}"/>
 
                     <div class="cvm-image-name">{{ getName(imagePath) }}</div>
                 </a>
